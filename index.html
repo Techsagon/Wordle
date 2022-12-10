@@ -1,0 +1,1965 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - CSS Wordle Game</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<label for="reset" title="Restart"></label>
+<h1>Wordl</h1>
+<input type="checkbox" id="col"/>
+<label for="col" title="Change colour mode"></label>
+<form autocomplete="off">
+  <input type="reset" id="reset"/>
+  <input type="radio" name="rnd" id="rnd"/>
+  <input type="radio" name="w1" id="w1_a"/>
+  <input type="radio" name="w1" id="w1_b"/>
+  <input type="radio" name="w1" id="w1_c"/>
+  <input type="radio" name="w1" id="w1_d"/>
+  <input type="radio" name="w1" id="w1_e"/>
+  <input type="radio" name="w1" id="w1_f"/>
+  <input type="radio" name="w1" id="w1_g"/>
+  <input type="radio" name="w1" id="w1_h"/>
+  <input type="radio" name="w1" id="w1_i"/>
+  <input type="radio" name="w1" id="w1_j"/>
+  <input type="radio" name="w1" id="w1_k"/>
+  <input type="radio" name="w1" id="w1_l"/>
+  <input type="radio" name="w1" id="w1_m"/>
+  <input type="radio" name="w1" id="w1_n"/>
+  <input type="radio" name="w1" id="w1_o"/>
+  <input type="radio" name="w1" id="w1_p"/>
+  <input type="radio" name="w1" id="w1_q"/>
+  <input type="radio" name="w1" id="w1_r"/>
+  <input type="radio" name="w1" id="w1_s"/>
+  <input type="radio" name="w1" id="w1_t"/>
+  <input type="radio" name="w1" id="w1_u"/>
+  <input type="radio" name="w1" id="w1_v"/>
+  <input type="radio" name="w1" id="w1_w"/>
+  <input type="radio" name="w1" id="w1_x"/>
+  <input type="radio" name="w1" id="w1_y"/>
+  <input type="radio" name="w1" id="w1_z"/>
+  <input type="radio" name="w2" id="w2_a"/>
+  <input type="radio" name="w2" id="w2_b"/>
+  <input type="radio" name="w2" id="w2_c"/>
+  <input type="radio" name="w2" id="w2_d"/>
+  <input type="radio" name="w2" id="w2_e"/>
+  <input type="radio" name="w2" id="w2_f"/>
+  <input type="radio" name="w2" id="w2_g"/>
+  <input type="radio" name="w2" id="w2_h"/>
+  <input type="radio" name="w2" id="w2_i"/>
+  <input type="radio" name="w2" id="w2_j"/>
+  <input type="radio" name="w2" id="w2_k"/>
+  <input type="radio" name="w2" id="w2_l"/>
+  <input type="radio" name="w2" id="w2_m"/>
+  <input type="radio" name="w2" id="w2_n"/>
+  <input type="radio" name="w2" id="w2_o"/>
+  <input type="radio" name="w2" id="w2_p"/>
+  <input type="radio" name="w2" id="w2_q"/>
+  <input type="radio" name="w2" id="w2_r"/>
+  <input type="radio" name="w2" id="w2_s"/>
+  <input type="radio" name="w2" id="w2_t"/>
+  <input type="radio" name="w2" id="w2_u"/>
+  <input type="radio" name="w2" id="w2_v"/>
+  <input type="radio" name="w2" id="w2_w"/>
+  <input type="radio" name="w2" id="w2_x"/>
+  <input type="radio" name="w2" id="w2_y"/>
+  <input type="radio" name="w2" id="w2_z"/>
+  <input type="radio" name="w3" id="w3_a"/>
+  <input type="radio" name="w3" id="w3_b"/>
+  <input type="radio" name="w3" id="w3_c"/>
+  <input type="radio" name="w3" id="w3_d"/>
+  <input type="radio" name="w3" id="w3_e"/>
+  <input type="radio" name="w3" id="w3_f"/>
+  <input type="radio" name="w3" id="w3_g"/>
+  <input type="radio" name="w3" id="w3_h"/>
+  <input type="radio" name="w3" id="w3_i"/>
+  <input type="radio" name="w3" id="w3_j"/>
+  <input type="radio" name="w3" id="w3_k"/>
+  <input type="radio" name="w3" id="w3_l"/>
+  <input type="radio" name="w3" id="w3_m"/>
+  <input type="radio" name="w3" id="w3_n"/>
+  <input type="radio" name="w3" id="w3_o"/>
+  <input type="radio" name="w3" id="w3_p"/>
+  <input type="radio" name="w3" id="w3_q"/>
+  <input type="radio" name="w3" id="w3_r"/>
+  <input type="radio" name="w3" id="w3_s"/>
+  <input type="radio" name="w3" id="w3_t"/>
+  <input type="radio" name="w3" id="w3_u"/>
+  <input type="radio" name="w3" id="w3_v"/>
+  <input type="radio" name="w3" id="w3_w"/>
+  <input type="radio" name="w3" id="w3_x"/>
+  <input type="radio" name="w3" id="w3_y"/>
+  <input type="radio" name="w3" id="w3_z"/>
+  <input type="radio" name="w4" id="w4_a"/>
+  <input type="radio" name="w4" id="w4_b"/>
+  <input type="radio" name="w4" id="w4_c"/>
+  <input type="radio" name="w4" id="w4_d"/>
+  <input type="radio" name="w4" id="w4_e"/>
+  <input type="radio" name="w4" id="w4_f"/>
+  <input type="radio" name="w4" id="w4_g"/>
+  <input type="radio" name="w4" id="w4_h"/>
+  <input type="radio" name="w4" id="w4_i"/>
+  <input type="radio" name="w4" id="w4_j"/>
+  <input type="radio" name="w4" id="w4_k"/>
+  <input type="radio" name="w4" id="w4_l"/>
+  <input type="radio" name="w4" id="w4_m"/>
+  <input type="radio" name="w4" id="w4_n"/>
+  <input type="radio" name="w4" id="w4_o"/>
+  <input type="radio" name="w4" id="w4_p"/>
+  <input type="radio" name="w4" id="w4_q"/>
+  <input type="radio" name="w4" id="w4_r"/>
+  <input type="radio" name="w4" id="w4_s"/>
+  <input type="radio" name="w4" id="w4_t"/>
+  <input type="radio" name="w4" id="w4_u"/>
+  <input type="radio" name="w4" id="w4_v"/>
+  <input type="radio" name="w4" id="w4_w"/>
+  <input type="radio" name="w4" id="w4_x"/>
+  <input type="radio" name="w4" id="w4_y"/>
+  <input type="radio" name="w4" id="w4_z"/>
+  <input type="radio" name="w5" id="w5_a"/>
+  <input type="radio" name="w5" id="w5_b"/>
+  <input type="radio" name="w5" id="w5_c"/>
+  <input type="radio" name="w5" id="w5_d"/>
+  <input type="radio" name="w5" id="w5_e"/>
+  <input type="radio" name="w5" id="w5_f"/>
+  <input type="radio" name="w5" id="w5_g"/>
+  <input type="radio" name="w5" id="w5_h"/>
+  <input type="radio" name="w5" id="w5_i"/>
+  <input type="radio" name="w5" id="w5_j"/>
+  <input type="radio" name="w5" id="w5_k"/>
+  <input type="radio" name="w5" id="w5_l"/>
+  <input type="radio" name="w5" id="w5_m"/>
+  <input type="radio" name="w5" id="w5_n"/>
+  <input type="radio" name="w5" id="w5_o"/>
+  <input type="radio" name="w5" id="w5_p"/>
+  <input type="radio" name="w5" id="w5_q"/>
+  <input type="radio" name="w5" id="w5_r"/>
+  <input type="radio" name="w5" id="w5_s"/>
+  <input type="radio" name="w5" id="w5_t"/>
+  <input type="radio" name="w5" id="w5_u"/>
+  <input type="radio" name="w5" id="w5_v"/>
+  <input type="radio" name="w5" id="w5_w"/>
+  <input type="radio" name="w5" id="w5_x"/>
+  <input type="radio" name="w5" id="w5_y"/>
+  <input type="radio" name="w5" id="w5_z"/>
+  <input type="radio" name="g1_1" id="g1_1_a"/>
+  <input type="radio" name="g1_1" id="g1_1_b"/>
+  <input type="radio" name="g1_1" id="g1_1_c"/>
+  <input type="radio" name="g1_1" id="g1_1_d"/>
+  <input type="radio" name="g1_1" id="g1_1_e"/>
+  <input type="radio" name="g1_1" id="g1_1_f"/>
+  <input type="radio" name="g1_1" id="g1_1_g"/>
+  <input type="radio" name="g1_1" id="g1_1_h"/>
+  <input type="radio" name="g1_1" id="g1_1_i"/>
+  <input type="radio" name="g1_1" id="g1_1_j"/>
+  <input type="radio" name="g1_1" id="g1_1_k"/>
+  <input type="radio" name="g1_1" id="g1_1_l"/>
+  <input type="radio" name="g1_1" id="g1_1_m"/>
+  <input type="radio" name="g1_1" id="g1_1_n"/>
+  <input type="radio" name="g1_1" id="g1_1_o"/>
+  <input type="radio" name="g1_1" id="g1_1_p"/>
+  <input type="radio" name="g1_1" id="g1_1_q"/>
+  <input type="radio" name="g1_1" id="g1_1_r"/>
+  <input type="radio" name="g1_1" id="g1_1_s"/>
+  <input type="radio" name="g1_1" id="g1_1_t"/>
+  <input type="radio" name="g1_1" id="g1_1_u"/>
+  <input type="radio" name="g1_1" id="g1_1_v"/>
+  <input type="radio" name="g1_1" id="g1_1_w"/>
+  <input type="radio" name="g1_1" id="g1_1_x"/>
+  <input type="radio" name="g1_1" id="g1_1_y"/>
+  <input type="radio" name="g1_1" id="g1_1_z"/>
+  <input type="radio" name="g1_1" id="g1_1"/>
+  <input type="radio" name="g1_2" id="g1_2_a"/>
+  <input type="radio" name="g1_2" id="g1_2_b"/>
+  <input type="radio" name="g1_2" id="g1_2_c"/>
+  <input type="radio" name="g1_2" id="g1_2_d"/>
+  <input type="radio" name="g1_2" id="g1_2_e"/>
+  <input type="radio" name="g1_2" id="g1_2_f"/>
+  <input type="radio" name="g1_2" id="g1_2_g"/>
+  <input type="radio" name="g1_2" id="g1_2_h"/>
+  <input type="radio" name="g1_2" id="g1_2_i"/>
+  <input type="radio" name="g1_2" id="g1_2_j"/>
+  <input type="radio" name="g1_2" id="g1_2_k"/>
+  <input type="radio" name="g1_2" id="g1_2_l"/>
+  <input type="radio" name="g1_2" id="g1_2_m"/>
+  <input type="radio" name="g1_2" id="g1_2_n"/>
+  <input type="radio" name="g1_2" id="g1_2_o"/>
+  <input type="radio" name="g1_2" id="g1_2_p"/>
+  <input type="radio" name="g1_2" id="g1_2_q"/>
+  <input type="radio" name="g1_2" id="g1_2_r"/>
+  <input type="radio" name="g1_2" id="g1_2_s"/>
+  <input type="radio" name="g1_2" id="g1_2_t"/>
+  <input type="radio" name="g1_2" id="g1_2_u"/>
+  <input type="radio" name="g1_2" id="g1_2_v"/>
+  <input type="radio" name="g1_2" id="g1_2_w"/>
+  <input type="radio" name="g1_2" id="g1_2_x"/>
+  <input type="radio" name="g1_2" id="g1_2_y"/>
+  <input type="radio" name="g1_2" id="g1_2_z"/>
+  <input type="radio" name="g1_2" id="g1_2"/>
+  <input type="radio" name="g1_3" id="g1_3_a"/>
+  <input type="radio" name="g1_3" id="g1_3_b"/>
+  <input type="radio" name="g1_3" id="g1_3_c"/>
+  <input type="radio" name="g1_3" id="g1_3_d"/>
+  <input type="radio" name="g1_3" id="g1_3_e"/>
+  <input type="radio" name="g1_3" id="g1_3_f"/>
+  <input type="radio" name="g1_3" id="g1_3_g"/>
+  <input type="radio" name="g1_3" id="g1_3_h"/>
+  <input type="radio" name="g1_3" id="g1_3_i"/>
+  <input type="radio" name="g1_3" id="g1_3_j"/>
+  <input type="radio" name="g1_3" id="g1_3_k"/>
+  <input type="radio" name="g1_3" id="g1_3_l"/>
+  <input type="radio" name="g1_3" id="g1_3_m"/>
+  <input type="radio" name="g1_3" id="g1_3_n"/>
+  <input type="radio" name="g1_3" id="g1_3_o"/>
+  <input type="radio" name="g1_3" id="g1_3_p"/>
+  <input type="radio" name="g1_3" id="g1_3_q"/>
+  <input type="radio" name="g1_3" id="g1_3_r"/>
+  <input type="radio" name="g1_3" id="g1_3_s"/>
+  <input type="radio" name="g1_3" id="g1_3_t"/>
+  <input type="radio" name="g1_3" id="g1_3_u"/>
+  <input type="radio" name="g1_3" id="g1_3_v"/>
+  <input type="radio" name="g1_3" id="g1_3_w"/>
+  <input type="radio" name="g1_3" id="g1_3_x"/>
+  <input type="radio" name="g1_3" id="g1_3_y"/>
+  <input type="radio" name="g1_3" id="g1_3_z"/>
+  <input type="radio" name="g1_3" id="g1_3"/>
+  <input type="radio" name="g1_4" id="g1_4_a"/>
+  <input type="radio" name="g1_4" id="g1_4_b"/>
+  <input type="radio" name="g1_4" id="g1_4_c"/>
+  <input type="radio" name="g1_4" id="g1_4_d"/>
+  <input type="radio" name="g1_4" id="g1_4_e"/>
+  <input type="radio" name="g1_4" id="g1_4_f"/>
+  <input type="radio" name="g1_4" id="g1_4_g"/>
+  <input type="radio" name="g1_4" id="g1_4_h"/>
+  <input type="radio" name="g1_4" id="g1_4_i"/>
+  <input type="radio" name="g1_4" id="g1_4_j"/>
+  <input type="radio" name="g1_4" id="g1_4_k"/>
+  <input type="radio" name="g1_4" id="g1_4_l"/>
+  <input type="radio" name="g1_4" id="g1_4_m"/>
+  <input type="radio" name="g1_4" id="g1_4_n"/>
+  <input type="radio" name="g1_4" id="g1_4_o"/>
+  <input type="radio" name="g1_4" id="g1_4_p"/>
+  <input type="radio" name="g1_4" id="g1_4_q"/>
+  <input type="radio" name="g1_4" id="g1_4_r"/>
+  <input type="radio" name="g1_4" id="g1_4_s"/>
+  <input type="radio" name="g1_4" id="g1_4_t"/>
+  <input type="radio" name="g1_4" id="g1_4_u"/>
+  <input type="radio" name="g1_4" id="g1_4_v"/>
+  <input type="radio" name="g1_4" id="g1_4_w"/>
+  <input type="radio" name="g1_4" id="g1_4_x"/>
+  <input type="radio" name="g1_4" id="g1_4_y"/>
+  <input type="radio" name="g1_4" id="g1_4_z"/>
+  <input type="radio" name="g1_4" id="g1_4"/>
+  <input type="radio" name="g1_5" id="g1_5_a"/>
+  <input type="radio" name="g1_5" id="g1_5_b"/>
+  <input type="radio" name="g1_5" id="g1_5_c"/>
+  <input type="radio" name="g1_5" id="g1_5_d"/>
+  <input type="radio" name="g1_5" id="g1_5_e"/>
+  <input type="radio" name="g1_5" id="g1_5_f"/>
+  <input type="radio" name="g1_5" id="g1_5_g"/>
+  <input type="radio" name="g1_5" id="g1_5_h"/>
+  <input type="radio" name="g1_5" id="g1_5_i"/>
+  <input type="radio" name="g1_5" id="g1_5_j"/>
+  <input type="radio" name="g1_5" id="g1_5_k"/>
+  <input type="radio" name="g1_5" id="g1_5_l"/>
+  <input type="radio" name="g1_5" id="g1_5_m"/>
+  <input type="radio" name="g1_5" id="g1_5_n"/>
+  <input type="radio" name="g1_5" id="g1_5_o"/>
+  <input type="radio" name="g1_5" id="g1_5_p"/>
+  <input type="radio" name="g1_5" id="g1_5_q"/>
+  <input type="radio" name="g1_5" id="g1_5_r"/>
+  <input type="radio" name="g1_5" id="g1_5_s"/>
+  <input type="radio" name="g1_5" id="g1_5_t"/>
+  <input type="radio" name="g1_5" id="g1_5_u"/>
+  <input type="radio" name="g1_5" id="g1_5_v"/>
+  <input type="radio" name="g1_5" id="g1_5_w"/>
+  <input type="radio" name="g1_5" id="g1_5_x"/>
+  <input type="radio" name="g1_5" id="g1_5_y"/>
+  <input type="radio" name="g1_5" id="g1_5_z"/>
+  <input type="radio" name="g1_5" id="g1_5"/>
+  <input class="g" type="radio" name="g1" id="g1-check"/>
+  <input class="g" type="radio" name="g1" id="g1-win"/>
+  <input type="radio" name="g2_1" id="g2_1_a"/>
+  <input type="radio" name="g2_1" id="g2_1_b"/>
+  <input type="radio" name="g2_1" id="g2_1_c"/>
+  <input type="radio" name="g2_1" id="g2_1_d"/>
+  <input type="radio" name="g2_1" id="g2_1_e"/>
+  <input type="radio" name="g2_1" id="g2_1_f"/>
+  <input type="radio" name="g2_1" id="g2_1_g"/>
+  <input type="radio" name="g2_1" id="g2_1_h"/>
+  <input type="radio" name="g2_1" id="g2_1_i"/>
+  <input type="radio" name="g2_1" id="g2_1_j"/>
+  <input type="radio" name="g2_1" id="g2_1_k"/>
+  <input type="radio" name="g2_1" id="g2_1_l"/>
+  <input type="radio" name="g2_1" id="g2_1_m"/>
+  <input type="radio" name="g2_1" id="g2_1_n"/>
+  <input type="radio" name="g2_1" id="g2_1_o"/>
+  <input type="radio" name="g2_1" id="g2_1_p"/>
+  <input type="radio" name="g2_1" id="g2_1_q"/>
+  <input type="radio" name="g2_1" id="g2_1_r"/>
+  <input type="radio" name="g2_1" id="g2_1_s"/>
+  <input type="radio" name="g2_1" id="g2_1_t"/>
+  <input type="radio" name="g2_1" id="g2_1_u"/>
+  <input type="radio" name="g2_1" id="g2_1_v"/>
+  <input type="radio" name="g2_1" id="g2_1_w"/>
+  <input type="radio" name="g2_1" id="g2_1_x"/>
+  <input type="radio" name="g2_1" id="g2_1_y"/>
+  <input type="radio" name="g2_1" id="g2_1_z"/>
+  <input type="radio" name="g2_1" id="g2_1"/>
+  <input type="radio" name="g2_2" id="g2_2_a"/>
+  <input type="radio" name="g2_2" id="g2_2_b"/>
+  <input type="radio" name="g2_2" id="g2_2_c"/>
+  <input type="radio" name="g2_2" id="g2_2_d"/>
+  <input type="radio" name="g2_2" id="g2_2_e"/>
+  <input type="radio" name="g2_2" id="g2_2_f"/>
+  <input type="radio" name="g2_2" id="g2_2_g"/>
+  <input type="radio" name="g2_2" id="g2_2_h"/>
+  <input type="radio" name="g2_2" id="g2_2_i"/>
+  <input type="radio" name="g2_2" id="g2_2_j"/>
+  <input type="radio" name="g2_2" id="g2_2_k"/>
+  <input type="radio" name="g2_2" id="g2_2_l"/>
+  <input type="radio" name="g2_2" id="g2_2_m"/>
+  <input type="radio" name="g2_2" id="g2_2_n"/>
+  <input type="radio" name="g2_2" id="g2_2_o"/>
+  <input type="radio" name="g2_2" id="g2_2_p"/>
+  <input type="radio" name="g2_2" id="g2_2_q"/>
+  <input type="radio" name="g2_2" id="g2_2_r"/>
+  <input type="radio" name="g2_2" id="g2_2_s"/>
+  <input type="radio" name="g2_2" id="g2_2_t"/>
+  <input type="radio" name="g2_2" id="g2_2_u"/>
+  <input type="radio" name="g2_2" id="g2_2_v"/>
+  <input type="radio" name="g2_2" id="g2_2_w"/>
+  <input type="radio" name="g2_2" id="g2_2_x"/>
+  <input type="radio" name="g2_2" id="g2_2_y"/>
+  <input type="radio" name="g2_2" id="g2_2_z"/>
+  <input type="radio" name="g2_2" id="g2_2"/>
+  <input type="radio" name="g2_3" id="g2_3_a"/>
+  <input type="radio" name="g2_3" id="g2_3_b"/>
+  <input type="radio" name="g2_3" id="g2_3_c"/>
+  <input type="radio" name="g2_3" id="g2_3_d"/>
+  <input type="radio" name="g2_3" id="g2_3_e"/>
+  <input type="radio" name="g2_3" id="g2_3_f"/>
+  <input type="radio" name="g2_3" id="g2_3_g"/>
+  <input type="radio" name="g2_3" id="g2_3_h"/>
+  <input type="radio" name="g2_3" id="g2_3_i"/>
+  <input type="radio" name="g2_3" id="g2_3_j"/>
+  <input type="radio" name="g2_3" id="g2_3_k"/>
+  <input type="radio" name="g2_3" id="g2_3_l"/>
+  <input type="radio" name="g2_3" id="g2_3_m"/>
+  <input type="radio" name="g2_3" id="g2_3_n"/>
+  <input type="radio" name="g2_3" id="g2_3_o"/>
+  <input type="radio" name="g2_3" id="g2_3_p"/>
+  <input type="radio" name="g2_3" id="g2_3_q"/>
+  <input type="radio" name="g2_3" id="g2_3_r"/>
+  <input type="radio" name="g2_3" id="g2_3_s"/>
+  <input type="radio" name="g2_3" id="g2_3_t"/>
+  <input type="radio" name="g2_3" id="g2_3_u"/>
+  <input type="radio" name="g2_3" id="g2_3_v"/>
+  <input type="radio" name="g2_3" id="g2_3_w"/>
+  <input type="radio" name="g2_3" id="g2_3_x"/>
+  <input type="radio" name="g2_3" id="g2_3_y"/>
+  <input type="radio" name="g2_3" id="g2_3_z"/>
+  <input type="radio" name="g2_3" id="g2_3"/>
+  <input type="radio" name="g2_4" id="g2_4_a"/>
+  <input type="radio" name="g2_4" id="g2_4_b"/>
+  <input type="radio" name="g2_4" id="g2_4_c"/>
+  <input type="radio" name="g2_4" id="g2_4_d"/>
+  <input type="radio" name="g2_4" id="g2_4_e"/>
+  <input type="radio" name="g2_4" id="g2_4_f"/>
+  <input type="radio" name="g2_4" id="g2_4_g"/>
+  <input type="radio" name="g2_4" id="g2_4_h"/>
+  <input type="radio" name="g2_4" id="g2_4_i"/>
+  <input type="radio" name="g2_4" id="g2_4_j"/>
+  <input type="radio" name="g2_4" id="g2_4_k"/>
+  <input type="radio" name="g2_4" id="g2_4_l"/>
+  <input type="radio" name="g2_4" id="g2_4_m"/>
+  <input type="radio" name="g2_4" id="g2_4_n"/>
+  <input type="radio" name="g2_4" id="g2_4_o"/>
+  <input type="radio" name="g2_4" id="g2_4_p"/>
+  <input type="radio" name="g2_4" id="g2_4_q"/>
+  <input type="radio" name="g2_4" id="g2_4_r"/>
+  <input type="radio" name="g2_4" id="g2_4_s"/>
+  <input type="radio" name="g2_4" id="g2_4_t"/>
+  <input type="radio" name="g2_4" id="g2_4_u"/>
+  <input type="radio" name="g2_4" id="g2_4_v"/>
+  <input type="radio" name="g2_4" id="g2_4_w"/>
+  <input type="radio" name="g2_4" id="g2_4_x"/>
+  <input type="radio" name="g2_4" id="g2_4_y"/>
+  <input type="radio" name="g2_4" id="g2_4_z"/>
+  <input type="radio" name="g2_4" id="g2_4"/>
+  <input type="radio" name="g2_5" id="g2_5_a"/>
+  <input type="radio" name="g2_5" id="g2_5_b"/>
+  <input type="radio" name="g2_5" id="g2_5_c"/>
+  <input type="radio" name="g2_5" id="g2_5_d"/>
+  <input type="radio" name="g2_5" id="g2_5_e"/>
+  <input type="radio" name="g2_5" id="g2_5_f"/>
+  <input type="radio" name="g2_5" id="g2_5_g"/>
+  <input type="radio" name="g2_5" id="g2_5_h"/>
+  <input type="radio" name="g2_5" id="g2_5_i"/>
+  <input type="radio" name="g2_5" id="g2_5_j"/>
+  <input type="radio" name="g2_5" id="g2_5_k"/>
+  <input type="radio" name="g2_5" id="g2_5_l"/>
+  <input type="radio" name="g2_5" id="g2_5_m"/>
+  <input type="radio" name="g2_5" id="g2_5_n"/>
+  <input type="radio" name="g2_5" id="g2_5_o"/>
+  <input type="radio" name="g2_5" id="g2_5_p"/>
+  <input type="radio" name="g2_5" id="g2_5_q"/>
+  <input type="radio" name="g2_5" id="g2_5_r"/>
+  <input type="radio" name="g2_5" id="g2_5_s"/>
+  <input type="radio" name="g2_5" id="g2_5_t"/>
+  <input type="radio" name="g2_5" id="g2_5_u"/>
+  <input type="radio" name="g2_5" id="g2_5_v"/>
+  <input type="radio" name="g2_5" id="g2_5_w"/>
+  <input type="radio" name="g2_5" id="g2_5_x"/>
+  <input type="radio" name="g2_5" id="g2_5_y"/>
+  <input type="radio" name="g2_5" id="g2_5_z"/>
+  <input type="radio" name="g2_5" id="g2_5"/>
+  <input class="g" type="radio" name="g2" id="g2-check"/>
+  <input class="g" type="radio" name="g2" id="g2-win"/>
+  <input type="radio" name="g3_1" id="g3_1_a"/>
+  <input type="radio" name="g3_1" id="g3_1_b"/>
+  <input type="radio" name="g3_1" id="g3_1_c"/>
+  <input type="radio" name="g3_1" id="g3_1_d"/>
+  <input type="radio" name="g3_1" id="g3_1_e"/>
+  <input type="radio" name="g3_1" id="g3_1_f"/>
+  <input type="radio" name="g3_1" id="g3_1_g"/>
+  <input type="radio" name="g3_1" id="g3_1_h"/>
+  <input type="radio" name="g3_1" id="g3_1_i"/>
+  <input type="radio" name="g3_1" id="g3_1_j"/>
+  <input type="radio" name="g3_1" id="g3_1_k"/>
+  <input type="radio" name="g3_1" id="g3_1_l"/>
+  <input type="radio" name="g3_1" id="g3_1_m"/>
+  <input type="radio" name="g3_1" id="g3_1_n"/>
+  <input type="radio" name="g3_1" id="g3_1_o"/>
+  <input type="radio" name="g3_1" id="g3_1_p"/>
+  <input type="radio" name="g3_1" id="g3_1_q"/>
+  <input type="radio" name="g3_1" id="g3_1_r"/>
+  <input type="radio" name="g3_1" id="g3_1_s"/>
+  <input type="radio" name="g3_1" id="g3_1_t"/>
+  <input type="radio" name="g3_1" id="g3_1_u"/>
+  <input type="radio" name="g3_1" id="g3_1_v"/>
+  <input type="radio" name="g3_1" id="g3_1_w"/>
+  <input type="radio" name="g3_1" id="g3_1_x"/>
+  <input type="radio" name="g3_1" id="g3_1_y"/>
+  <input type="radio" name="g3_1" id="g3_1_z"/>
+  <input type="radio" name="g3_1" id="g3_1"/>
+  <input type="radio" name="g3_2" id="g3_2_a"/>
+  <input type="radio" name="g3_2" id="g3_2_b"/>
+  <input type="radio" name="g3_2" id="g3_2_c"/>
+  <input type="radio" name="g3_2" id="g3_2_d"/>
+  <input type="radio" name="g3_2" id="g3_2_e"/>
+  <input type="radio" name="g3_2" id="g3_2_f"/>
+  <input type="radio" name="g3_2" id="g3_2_g"/>
+  <input type="radio" name="g3_2" id="g3_2_h"/>
+  <input type="radio" name="g3_2" id="g3_2_i"/>
+  <input type="radio" name="g3_2" id="g3_2_j"/>
+  <input type="radio" name="g3_2" id="g3_2_k"/>
+  <input type="radio" name="g3_2" id="g3_2_l"/>
+  <input type="radio" name="g3_2" id="g3_2_m"/>
+  <input type="radio" name="g3_2" id="g3_2_n"/>
+  <input type="radio" name="g3_2" id="g3_2_o"/>
+  <input type="radio" name="g3_2" id="g3_2_p"/>
+  <input type="radio" name="g3_2" id="g3_2_q"/>
+  <input type="radio" name="g3_2" id="g3_2_r"/>
+  <input type="radio" name="g3_2" id="g3_2_s"/>
+  <input type="radio" name="g3_2" id="g3_2_t"/>
+  <input type="radio" name="g3_2" id="g3_2_u"/>
+  <input type="radio" name="g3_2" id="g3_2_v"/>
+  <input type="radio" name="g3_2" id="g3_2_w"/>
+  <input type="radio" name="g3_2" id="g3_2_x"/>
+  <input type="radio" name="g3_2" id="g3_2_y"/>
+  <input type="radio" name="g3_2" id="g3_2_z"/>
+  <input type="radio" name="g3_2" id="g3_2"/>
+  <input type="radio" name="g3_3" id="g3_3_a"/>
+  <input type="radio" name="g3_3" id="g3_3_b"/>
+  <input type="radio" name="g3_3" id="g3_3_c"/>
+  <input type="radio" name="g3_3" id="g3_3_d"/>
+  <input type="radio" name="g3_3" id="g3_3_e"/>
+  <input type="radio" name="g3_3" id="g3_3_f"/>
+  <input type="radio" name="g3_3" id="g3_3_g"/>
+  <input type="radio" name="g3_3" id="g3_3_h"/>
+  <input type="radio" name="g3_3" id="g3_3_i"/>
+  <input type="radio" name="g3_3" id="g3_3_j"/>
+  <input type="radio" name="g3_3" id="g3_3_k"/>
+  <input type="radio" name="g3_3" id="g3_3_l"/>
+  <input type="radio" name="g3_3" id="g3_3_m"/>
+  <input type="radio" name="g3_3" id="g3_3_n"/>
+  <input type="radio" name="g3_3" id="g3_3_o"/>
+  <input type="radio" name="g3_3" id="g3_3_p"/>
+  <input type="radio" name="g3_3" id="g3_3_q"/>
+  <input type="radio" name="g3_3" id="g3_3_r"/>
+  <input type="radio" name="g3_3" id="g3_3_s"/>
+  <input type="radio" name="g3_3" id="g3_3_t"/>
+  <input type="radio" name="g3_3" id="g3_3_u"/>
+  <input type="radio" name="g3_3" id="g3_3_v"/>
+  <input type="radio" name="g3_3" id="g3_3_w"/>
+  <input type="radio" name="g3_3" id="g3_3_x"/>
+  <input type="radio" name="g3_3" id="g3_3_y"/>
+  <input type="radio" name="g3_3" id="g3_3_z"/>
+  <input type="radio" name="g3_3" id="g3_3"/>
+  <input type="radio" name="g3_4" id="g3_4_a"/>
+  <input type="radio" name="g3_4" id="g3_4_b"/>
+  <input type="radio" name="g3_4" id="g3_4_c"/>
+  <input type="radio" name="g3_4" id="g3_4_d"/>
+  <input type="radio" name="g3_4" id="g3_4_e"/>
+  <input type="radio" name="g3_4" id="g3_4_f"/>
+  <input type="radio" name="g3_4" id="g3_4_g"/>
+  <input type="radio" name="g3_4" id="g3_4_h"/>
+  <input type="radio" name="g3_4" id="g3_4_i"/>
+  <input type="radio" name="g3_4" id="g3_4_j"/>
+  <input type="radio" name="g3_4" id="g3_4_k"/>
+  <input type="radio" name="g3_4" id="g3_4_l"/>
+  <input type="radio" name="g3_4" id="g3_4_m"/>
+  <input type="radio" name="g3_4" id="g3_4_n"/>
+  <input type="radio" name="g3_4" id="g3_4_o"/>
+  <input type="radio" name="g3_4" id="g3_4_p"/>
+  <input type="radio" name="g3_4" id="g3_4_q"/>
+  <input type="radio" name="g3_4" id="g3_4_r"/>
+  <input type="radio" name="g3_4" id="g3_4_s"/>
+  <input type="radio" name="g3_4" id="g3_4_t"/>
+  <input type="radio" name="g3_4" id="g3_4_u"/>
+  <input type="radio" name="g3_4" id="g3_4_v"/>
+  <input type="radio" name="g3_4" id="g3_4_w"/>
+  <input type="radio" name="g3_4" id="g3_4_x"/>
+  <input type="radio" name="g3_4" id="g3_4_y"/>
+  <input type="radio" name="g3_4" id="g3_4_z"/>
+  <input type="radio" name="g3_4" id="g3_4"/>
+  <input type="radio" name="g3_5" id="g3_5_a"/>
+  <input type="radio" name="g3_5" id="g3_5_b"/>
+  <input type="radio" name="g3_5" id="g3_5_c"/>
+  <input type="radio" name="g3_5" id="g3_5_d"/>
+  <input type="radio" name="g3_5" id="g3_5_e"/>
+  <input type="radio" name="g3_5" id="g3_5_f"/>
+  <input type="radio" name="g3_5" id="g3_5_g"/>
+  <input type="radio" name="g3_5" id="g3_5_h"/>
+  <input type="radio" name="g3_5" id="g3_5_i"/>
+  <input type="radio" name="g3_5" id="g3_5_j"/>
+  <input type="radio" name="g3_5" id="g3_5_k"/>
+  <input type="radio" name="g3_5" id="g3_5_l"/>
+  <input type="radio" name="g3_5" id="g3_5_m"/>
+  <input type="radio" name="g3_5" id="g3_5_n"/>
+  <input type="radio" name="g3_5" id="g3_5_o"/>
+  <input type="radio" name="g3_5" id="g3_5_p"/>
+  <input type="radio" name="g3_5" id="g3_5_q"/>
+  <input type="radio" name="g3_5" id="g3_5_r"/>
+  <input type="radio" name="g3_5" id="g3_5_s"/>
+  <input type="radio" name="g3_5" id="g3_5_t"/>
+  <input type="radio" name="g3_5" id="g3_5_u"/>
+  <input type="radio" name="g3_5" id="g3_5_v"/>
+  <input type="radio" name="g3_5" id="g3_5_w"/>
+  <input type="radio" name="g3_5" id="g3_5_x"/>
+  <input type="radio" name="g3_5" id="g3_5_y"/>
+  <input type="radio" name="g3_5" id="g3_5_z"/>
+  <input type="radio" name="g3_5" id="g3_5"/>
+  <input class="g" type="radio" name="g3" id="g3-check"/>
+  <input class="g" type="radio" name="g3" id="g3-win"/>
+  <input type="radio" name="g4_1" id="g4_1_a"/>
+  <input type="radio" name="g4_1" id="g4_1_b"/>
+  <input type="radio" name="g4_1" id="g4_1_c"/>
+  <input type="radio" name="g4_1" id="g4_1_d"/>
+  <input type="radio" name="g4_1" id="g4_1_e"/>
+  <input type="radio" name="g4_1" id="g4_1_f"/>
+  <input type="radio" name="g4_1" id="g4_1_g"/>
+  <input type="radio" name="g4_1" id="g4_1_h"/>
+  <input type="radio" name="g4_1" id="g4_1_i"/>
+  <input type="radio" name="g4_1" id="g4_1_j"/>
+  <input type="radio" name="g4_1" id="g4_1_k"/>
+  <input type="radio" name="g4_1" id="g4_1_l"/>
+  <input type="radio" name="g4_1" id="g4_1_m"/>
+  <input type="radio" name="g4_1" id="g4_1_n"/>
+  <input type="radio" name="g4_1" id="g4_1_o"/>
+  <input type="radio" name="g4_1" id="g4_1_p"/>
+  <input type="radio" name="g4_1" id="g4_1_q"/>
+  <input type="radio" name="g4_1" id="g4_1_r"/>
+  <input type="radio" name="g4_1" id="g4_1_s"/>
+  <input type="radio" name="g4_1" id="g4_1_t"/>
+  <input type="radio" name="g4_1" id="g4_1_u"/>
+  <input type="radio" name="g4_1" id="g4_1_v"/>
+  <input type="radio" name="g4_1" id="g4_1_w"/>
+  <input type="radio" name="g4_1" id="g4_1_x"/>
+  <input type="radio" name="g4_1" id="g4_1_y"/>
+  <input type="radio" name="g4_1" id="g4_1_z"/>
+  <input type="radio" name="g4_1" id="g4_1"/>
+  <input type="radio" name="g4_2" id="g4_2_a"/>
+  <input type="radio" name="g4_2" id="g4_2_b"/>
+  <input type="radio" name="g4_2" id="g4_2_c"/>
+  <input type="radio" name="g4_2" id="g4_2_d"/>
+  <input type="radio" name="g4_2" id="g4_2_e"/>
+  <input type="radio" name="g4_2" id="g4_2_f"/>
+  <input type="radio" name="g4_2" id="g4_2_g"/>
+  <input type="radio" name="g4_2" id="g4_2_h"/>
+  <input type="radio" name="g4_2" id="g4_2_i"/>
+  <input type="radio" name="g4_2" id="g4_2_j"/>
+  <input type="radio" name="g4_2" id="g4_2_k"/>
+  <input type="radio" name="g4_2" id="g4_2_l"/>
+  <input type="radio" name="g4_2" id="g4_2_m"/>
+  <input type="radio" name="g4_2" id="g4_2_n"/>
+  <input type="radio" name="g4_2" id="g4_2_o"/>
+  <input type="radio" name="g4_2" id="g4_2_p"/>
+  <input type="radio" name="g4_2" id="g4_2_q"/>
+  <input type="radio" name="g4_2" id="g4_2_r"/>
+  <input type="radio" name="g4_2" id="g4_2_s"/>
+  <input type="radio" name="g4_2" id="g4_2_t"/>
+  <input type="radio" name="g4_2" id="g4_2_u"/>
+  <input type="radio" name="g4_2" id="g4_2_v"/>
+  <input type="radio" name="g4_2" id="g4_2_w"/>
+  <input type="radio" name="g4_2" id="g4_2_x"/>
+  <input type="radio" name="g4_2" id="g4_2_y"/>
+  <input type="radio" name="g4_2" id="g4_2_z"/>
+  <input type="radio" name="g4_2" id="g4_2"/>
+  <input type="radio" name="g4_3" id="g4_3_a"/>
+  <input type="radio" name="g4_3" id="g4_3_b"/>
+  <input type="radio" name="g4_3" id="g4_3_c"/>
+  <input type="radio" name="g4_3" id="g4_3_d"/>
+  <input type="radio" name="g4_3" id="g4_3_e"/>
+  <input type="radio" name="g4_3" id="g4_3_f"/>
+  <input type="radio" name="g4_3" id="g4_3_g"/>
+  <input type="radio" name="g4_3" id="g4_3_h"/>
+  <input type="radio" name="g4_3" id="g4_3_i"/>
+  <input type="radio" name="g4_3" id="g4_3_j"/>
+  <input type="radio" name="g4_3" id="g4_3_k"/>
+  <input type="radio" name="g4_3" id="g4_3_l"/>
+  <input type="radio" name="g4_3" id="g4_3_m"/>
+  <input type="radio" name="g4_3" id="g4_3_n"/>
+  <input type="radio" name="g4_3" id="g4_3_o"/>
+  <input type="radio" name="g4_3" id="g4_3_p"/>
+  <input type="radio" name="g4_3" id="g4_3_q"/>
+  <input type="radio" name="g4_3" id="g4_3_r"/>
+  <input type="radio" name="g4_3" id="g4_3_s"/>
+  <input type="radio" name="g4_3" id="g4_3_t"/>
+  <input type="radio" name="g4_3" id="g4_3_u"/>
+  <input type="radio" name="g4_3" id="g4_3_v"/>
+  <input type="radio" name="g4_3" id="g4_3_w"/>
+  <input type="radio" name="g4_3" id="g4_3_x"/>
+  <input type="radio" name="g4_3" id="g4_3_y"/>
+  <input type="radio" name="g4_3" id="g4_3_z"/>
+  <input type="radio" name="g4_3" id="g4_3"/>
+  <input type="radio" name="g4_4" id="g4_4_a"/>
+  <input type="radio" name="g4_4" id="g4_4_b"/>
+  <input type="radio" name="g4_4" id="g4_4_c"/>
+  <input type="radio" name="g4_4" id="g4_4_d"/>
+  <input type="radio" name="g4_4" id="g4_4_e"/>
+  <input type="radio" name="g4_4" id="g4_4_f"/>
+  <input type="radio" name="g4_4" id="g4_4_g"/>
+  <input type="radio" name="g4_4" id="g4_4_h"/>
+  <input type="radio" name="g4_4" id="g4_4_i"/>
+  <input type="radio" name="g4_4" id="g4_4_j"/>
+  <input type="radio" name="g4_4" id="g4_4_k"/>
+  <input type="radio" name="g4_4" id="g4_4_l"/>
+  <input type="radio" name="g4_4" id="g4_4_m"/>
+  <input type="radio" name="g4_4" id="g4_4_n"/>
+  <input type="radio" name="g4_4" id="g4_4_o"/>
+  <input type="radio" name="g4_4" id="g4_4_p"/>
+  <input type="radio" name="g4_4" id="g4_4_q"/>
+  <input type="radio" name="g4_4" id="g4_4_r"/>
+  <input type="radio" name="g4_4" id="g4_4_s"/>
+  <input type="radio" name="g4_4" id="g4_4_t"/>
+  <input type="radio" name="g4_4" id="g4_4_u"/>
+  <input type="radio" name="g4_4" id="g4_4_v"/>
+  <input type="radio" name="g4_4" id="g4_4_w"/>
+  <input type="radio" name="g4_4" id="g4_4_x"/>
+  <input type="radio" name="g4_4" id="g4_4_y"/>
+  <input type="radio" name="g4_4" id="g4_4_z"/>
+  <input type="radio" name="g4_4" id="g4_4"/>
+  <input type="radio" name="g4_5" id="g4_5_a"/>
+  <input type="radio" name="g4_5" id="g4_5_b"/>
+  <input type="radio" name="g4_5" id="g4_5_c"/>
+  <input type="radio" name="g4_5" id="g4_5_d"/>
+  <input type="radio" name="g4_5" id="g4_5_e"/>
+  <input type="radio" name="g4_5" id="g4_5_f"/>
+  <input type="radio" name="g4_5" id="g4_5_g"/>
+  <input type="radio" name="g4_5" id="g4_5_h"/>
+  <input type="radio" name="g4_5" id="g4_5_i"/>
+  <input type="radio" name="g4_5" id="g4_5_j"/>
+  <input type="radio" name="g4_5" id="g4_5_k"/>
+  <input type="radio" name="g4_5" id="g4_5_l"/>
+  <input type="radio" name="g4_5" id="g4_5_m"/>
+  <input type="radio" name="g4_5" id="g4_5_n"/>
+  <input type="radio" name="g4_5" id="g4_5_o"/>
+  <input type="radio" name="g4_5" id="g4_5_p"/>
+  <input type="radio" name="g4_5" id="g4_5_q"/>
+  <input type="radio" name="g4_5" id="g4_5_r"/>
+  <input type="radio" name="g4_5" id="g4_5_s"/>
+  <input type="radio" name="g4_5" id="g4_5_t"/>
+  <input type="radio" name="g4_5" id="g4_5_u"/>
+  <input type="radio" name="g4_5" id="g4_5_v"/>
+  <input type="radio" name="g4_5" id="g4_5_w"/>
+  <input type="radio" name="g4_5" id="g4_5_x"/>
+  <input type="radio" name="g4_5" id="g4_5_y"/>
+  <input type="radio" name="g4_5" id="g4_5_z"/>
+  <input type="radio" name="g4_5" id="g4_5"/>
+  <input class="g" type="radio" name="g4" id="g4-check"/>
+  <input class="g" type="radio" name="g4" id="g4-win"/>
+  <input type="radio" name="g5_1" id="g5_1_a"/>
+  <input type="radio" name="g5_1" id="g5_1_b"/>
+  <input type="radio" name="g5_1" id="g5_1_c"/>
+  <input type="radio" name="g5_1" id="g5_1_d"/>
+  <input type="radio" name="g5_1" id="g5_1_e"/>
+  <input type="radio" name="g5_1" id="g5_1_f"/>
+  <input type="radio" name="g5_1" id="g5_1_g"/>
+  <input type="radio" name="g5_1" id="g5_1_h"/>
+  <input type="radio" name="g5_1" id="g5_1_i"/>
+  <input type="radio" name="g5_1" id="g5_1_j"/>
+  <input type="radio" name="g5_1" id="g5_1_k"/>
+  <input type="radio" name="g5_1" id="g5_1_l"/>
+  <input type="radio" name="g5_1" id="g5_1_m"/>
+  <input type="radio" name="g5_1" id="g5_1_n"/>
+  <input type="radio" name="g5_1" id="g5_1_o"/>
+  <input type="radio" name="g5_1" id="g5_1_p"/>
+  <input type="radio" name="g5_1" id="g5_1_q"/>
+  <input type="radio" name="g5_1" id="g5_1_r"/>
+  <input type="radio" name="g5_1" id="g5_1_s"/>
+  <input type="radio" name="g5_1" id="g5_1_t"/>
+  <input type="radio" name="g5_1" id="g5_1_u"/>
+  <input type="radio" name="g5_1" id="g5_1_v"/>
+  <input type="radio" name="g5_1" id="g5_1_w"/>
+  <input type="radio" name="g5_1" id="g5_1_x"/>
+  <input type="radio" name="g5_1" id="g5_1_y"/>
+  <input type="radio" name="g5_1" id="g5_1_z"/>
+  <input type="radio" name="g5_1" id="g5_1"/>
+  <input type="radio" name="g5_2" id="g5_2_a"/>
+  <input type="radio" name="g5_2" id="g5_2_b"/>
+  <input type="radio" name="g5_2" id="g5_2_c"/>
+  <input type="radio" name="g5_2" id="g5_2_d"/>
+  <input type="radio" name="g5_2" id="g5_2_e"/>
+  <input type="radio" name="g5_2" id="g5_2_f"/>
+  <input type="radio" name="g5_2" id="g5_2_g"/>
+  <input type="radio" name="g5_2" id="g5_2_h"/>
+  <input type="radio" name="g5_2" id="g5_2_i"/>
+  <input type="radio" name="g5_2" id="g5_2_j"/>
+  <input type="radio" name="g5_2" id="g5_2_k"/>
+  <input type="radio" name="g5_2" id="g5_2_l"/>
+  <input type="radio" name="g5_2" id="g5_2_m"/>
+  <input type="radio" name="g5_2" id="g5_2_n"/>
+  <input type="radio" name="g5_2" id="g5_2_o"/>
+  <input type="radio" name="g5_2" id="g5_2_p"/>
+  <input type="radio" name="g5_2" id="g5_2_q"/>
+  <input type="radio" name="g5_2" id="g5_2_r"/>
+  <input type="radio" name="g5_2" id="g5_2_s"/>
+  <input type="radio" name="g5_2" id="g5_2_t"/>
+  <input type="radio" name="g5_2" id="g5_2_u"/>
+  <input type="radio" name="g5_2" id="g5_2_v"/>
+  <input type="radio" name="g5_2" id="g5_2_w"/>
+  <input type="radio" name="g5_2" id="g5_2_x"/>
+  <input type="radio" name="g5_2" id="g5_2_y"/>
+  <input type="radio" name="g5_2" id="g5_2_z"/>
+  <input type="radio" name="g5_2" id="g5_2"/>
+  <input type="radio" name="g5_3" id="g5_3_a"/>
+  <input type="radio" name="g5_3" id="g5_3_b"/>
+  <input type="radio" name="g5_3" id="g5_3_c"/>
+  <input type="radio" name="g5_3" id="g5_3_d"/>
+  <input type="radio" name="g5_3" id="g5_3_e"/>
+  <input type="radio" name="g5_3" id="g5_3_f"/>
+  <input type="radio" name="g5_3" id="g5_3_g"/>
+  <input type="radio" name="g5_3" id="g5_3_h"/>
+  <input type="radio" name="g5_3" id="g5_3_i"/>
+  <input type="radio" name="g5_3" id="g5_3_j"/>
+  <input type="radio" name="g5_3" id="g5_3_k"/>
+  <input type="radio" name="g5_3" id="g5_3_l"/>
+  <input type="radio" name="g5_3" id="g5_3_m"/>
+  <input type="radio" name="g5_3" id="g5_3_n"/>
+  <input type="radio" name="g5_3" id="g5_3_o"/>
+  <input type="radio" name="g5_3" id="g5_3_p"/>
+  <input type="radio" name="g5_3" id="g5_3_q"/>
+  <input type="radio" name="g5_3" id="g5_3_r"/>
+  <input type="radio" name="g5_3" id="g5_3_s"/>
+  <input type="radio" name="g5_3" id="g5_3_t"/>
+  <input type="radio" name="g5_3" id="g5_3_u"/>
+  <input type="radio" name="g5_3" id="g5_3_v"/>
+  <input type="radio" name="g5_3" id="g5_3_w"/>
+  <input type="radio" name="g5_3" id="g5_3_x"/>
+  <input type="radio" name="g5_3" id="g5_3_y"/>
+  <input type="radio" name="g5_3" id="g5_3_z"/>
+  <input type="radio" name="g5_3" id="g5_3"/>
+  <input type="radio" name="g5_4" id="g5_4_a"/>
+  <input type="radio" name="g5_4" id="g5_4_b"/>
+  <input type="radio" name="g5_4" id="g5_4_c"/>
+  <input type="radio" name="g5_4" id="g5_4_d"/>
+  <input type="radio" name="g5_4" id="g5_4_e"/>
+  <input type="radio" name="g5_4" id="g5_4_f"/>
+  <input type="radio" name="g5_4" id="g5_4_g"/>
+  <input type="radio" name="g5_4" id="g5_4_h"/>
+  <input type="radio" name="g5_4" id="g5_4_i"/>
+  <input type="radio" name="g5_4" id="g5_4_j"/>
+  <input type="radio" name="g5_4" id="g5_4_k"/>
+  <input type="radio" name="g5_4" id="g5_4_l"/>
+  <input type="radio" name="g5_4" id="g5_4_m"/>
+  <input type="radio" name="g5_4" id="g5_4_n"/>
+  <input type="radio" name="g5_4" id="g5_4_o"/>
+  <input type="radio" name="g5_4" id="g5_4_p"/>
+  <input type="radio" name="g5_4" id="g5_4_q"/>
+  <input type="radio" name="g5_4" id="g5_4_r"/>
+  <input type="radio" name="g5_4" id="g5_4_s"/>
+  <input type="radio" name="g5_4" id="g5_4_t"/>
+  <input type="radio" name="g5_4" id="g5_4_u"/>
+  <input type="radio" name="g5_4" id="g5_4_v"/>
+  <input type="radio" name="g5_4" id="g5_4_w"/>
+  <input type="radio" name="g5_4" id="g5_4_x"/>
+  <input type="radio" name="g5_4" id="g5_4_y"/>
+  <input type="radio" name="g5_4" id="g5_4_z"/>
+  <input type="radio" name="g5_4" id="g5_4"/>
+  <input type="radio" name="g5_5" id="g5_5_a"/>
+  <input type="radio" name="g5_5" id="g5_5_b"/>
+  <input type="radio" name="g5_5" id="g5_5_c"/>
+  <input type="radio" name="g5_5" id="g5_5_d"/>
+  <input type="radio" name="g5_5" id="g5_5_e"/>
+  <input type="radio" name="g5_5" id="g5_5_f"/>
+  <input type="radio" name="g5_5" id="g5_5_g"/>
+  <input type="radio" name="g5_5" id="g5_5_h"/>
+  <input type="radio" name="g5_5" id="g5_5_i"/>
+  <input type="radio" name="g5_5" id="g5_5_j"/>
+  <input type="radio" name="g5_5" id="g5_5_k"/>
+  <input type="radio" name="g5_5" id="g5_5_l"/>
+  <input type="radio" name="g5_5" id="g5_5_m"/>
+  <input type="radio" name="g5_5" id="g5_5_n"/>
+  <input type="radio" name="g5_5" id="g5_5_o"/>
+  <input type="radio" name="g5_5" id="g5_5_p"/>
+  <input type="radio" name="g5_5" id="g5_5_q"/>
+  <input type="radio" name="g5_5" id="g5_5_r"/>
+  <input type="radio" name="g5_5" id="g5_5_s"/>
+  <input type="radio" name="g5_5" id="g5_5_t"/>
+  <input type="radio" name="g5_5" id="g5_5_u"/>
+  <input type="radio" name="g5_5" id="g5_5_v"/>
+  <input type="radio" name="g5_5" id="g5_5_w"/>
+  <input type="radio" name="g5_5" id="g5_5_x"/>
+  <input type="radio" name="g5_5" id="g5_5_y"/>
+  <input type="radio" name="g5_5" id="g5_5_z"/>
+  <input type="radio" name="g5_5" id="g5_5"/>
+  <input class="g" type="radio" name="g5" id="g5-check"/>
+  <input class="g" type="radio" name="g5" id="g5-win"/>
+  <input type="radio" name="g6_1" id="g6_1_a"/>
+  <input type="radio" name="g6_1" id="g6_1_b"/>
+  <input type="radio" name="g6_1" id="g6_1_c"/>
+  <input type="radio" name="g6_1" id="g6_1_d"/>
+  <input type="radio" name="g6_1" id="g6_1_e"/>
+  <input type="radio" name="g6_1" id="g6_1_f"/>
+  <input type="radio" name="g6_1" id="g6_1_g"/>
+  <input type="radio" name="g6_1" id="g6_1_h"/>
+  <input type="radio" name="g6_1" id="g6_1_i"/>
+  <input type="radio" name="g6_1" id="g6_1_j"/>
+  <input type="radio" name="g6_1" id="g6_1_k"/>
+  <input type="radio" name="g6_1" id="g6_1_l"/>
+  <input type="radio" name="g6_1" id="g6_1_m"/>
+  <input type="radio" name="g6_1" id="g6_1_n"/>
+  <input type="radio" name="g6_1" id="g6_1_o"/>
+  <input type="radio" name="g6_1" id="g6_1_p"/>
+  <input type="radio" name="g6_1" id="g6_1_q"/>
+  <input type="radio" name="g6_1" id="g6_1_r"/>
+  <input type="radio" name="g6_1" id="g6_1_s"/>
+  <input type="radio" name="g6_1" id="g6_1_t"/>
+  <input type="radio" name="g6_1" id="g6_1_u"/>
+  <input type="radio" name="g6_1" id="g6_1_v"/>
+  <input type="radio" name="g6_1" id="g6_1_w"/>
+  <input type="radio" name="g6_1" id="g6_1_x"/>
+  <input type="radio" name="g6_1" id="g6_1_y"/>
+  <input type="radio" name="g6_1" id="g6_1_z"/>
+  <input type="radio" name="g6_1" id="g6_1"/>
+  <input type="radio" name="g6_2" id="g6_2_a"/>
+  <input type="radio" name="g6_2" id="g6_2_b"/>
+  <input type="radio" name="g6_2" id="g6_2_c"/>
+  <input type="radio" name="g6_2" id="g6_2_d"/>
+  <input type="radio" name="g6_2" id="g6_2_e"/>
+  <input type="radio" name="g6_2" id="g6_2_f"/>
+  <input type="radio" name="g6_2" id="g6_2_g"/>
+  <input type="radio" name="g6_2" id="g6_2_h"/>
+  <input type="radio" name="g6_2" id="g6_2_i"/>
+  <input type="radio" name="g6_2" id="g6_2_j"/>
+  <input type="radio" name="g6_2" id="g6_2_k"/>
+  <input type="radio" name="g6_2" id="g6_2_l"/>
+  <input type="radio" name="g6_2" id="g6_2_m"/>
+  <input type="radio" name="g6_2" id="g6_2_n"/>
+  <input type="radio" name="g6_2" id="g6_2_o"/>
+  <input type="radio" name="g6_2" id="g6_2_p"/>
+  <input type="radio" name="g6_2" id="g6_2_q"/>
+  <input type="radio" name="g6_2" id="g6_2_r"/>
+  <input type="radio" name="g6_2" id="g6_2_s"/>
+  <input type="radio" name="g6_2" id="g6_2_t"/>
+  <input type="radio" name="g6_2" id="g6_2_u"/>
+  <input type="radio" name="g6_2" id="g6_2_v"/>
+  <input type="radio" name="g6_2" id="g6_2_w"/>
+  <input type="radio" name="g6_2" id="g6_2_x"/>
+  <input type="radio" name="g6_2" id="g6_2_y"/>
+  <input type="radio" name="g6_2" id="g6_2_z"/>
+  <input type="radio" name="g6_2" id="g6_2"/>
+  <input type="radio" name="g6_3" id="g6_3_a"/>
+  <input type="radio" name="g6_3" id="g6_3_b"/>
+  <input type="radio" name="g6_3" id="g6_3_c"/>
+  <input type="radio" name="g6_3" id="g6_3_d"/>
+  <input type="radio" name="g6_3" id="g6_3_e"/>
+  <input type="radio" name="g6_3" id="g6_3_f"/>
+  <input type="radio" name="g6_3" id="g6_3_g"/>
+  <input type="radio" name="g6_3" id="g6_3_h"/>
+  <input type="radio" name="g6_3" id="g6_3_i"/>
+  <input type="radio" name="g6_3" id="g6_3_j"/>
+  <input type="radio" name="g6_3" id="g6_3_k"/>
+  <input type="radio" name="g6_3" id="g6_3_l"/>
+  <input type="radio" name="g6_3" id="g6_3_m"/>
+  <input type="radio" name="g6_3" id="g6_3_n"/>
+  <input type="radio" name="g6_3" id="g6_3_o"/>
+  <input type="radio" name="g6_3" id="g6_3_p"/>
+  <input type="radio" name="g6_3" id="g6_3_q"/>
+  <input type="radio" name="g6_3" id="g6_3_r"/>
+  <input type="radio" name="g6_3" id="g6_3_s"/>
+  <input type="radio" name="g6_3" id="g6_3_t"/>
+  <input type="radio" name="g6_3" id="g6_3_u"/>
+  <input type="radio" name="g6_3" id="g6_3_v"/>
+  <input type="radio" name="g6_3" id="g6_3_w"/>
+  <input type="radio" name="g6_3" id="g6_3_x"/>
+  <input type="radio" name="g6_3" id="g6_3_y"/>
+  <input type="radio" name="g6_3" id="g6_3_z"/>
+  <input type="radio" name="g6_3" id="g6_3"/>
+  <input type="radio" name="g6_4" id="g6_4_a"/>
+  <input type="radio" name="g6_4" id="g6_4_b"/>
+  <input type="radio" name="g6_4" id="g6_4_c"/>
+  <input type="radio" name="g6_4" id="g6_4_d"/>
+  <input type="radio" name="g6_4" id="g6_4_e"/>
+  <input type="radio" name="g6_4" id="g6_4_f"/>
+  <input type="radio" name="g6_4" id="g6_4_g"/>
+  <input type="radio" name="g6_4" id="g6_4_h"/>
+  <input type="radio" name="g6_4" id="g6_4_i"/>
+  <input type="radio" name="g6_4" id="g6_4_j"/>
+  <input type="radio" name="g6_4" id="g6_4_k"/>
+  <input type="radio" name="g6_4" id="g6_4_l"/>
+  <input type="radio" name="g6_4" id="g6_4_m"/>
+  <input type="radio" name="g6_4" id="g6_4_n"/>
+  <input type="radio" name="g6_4" id="g6_4_o"/>
+  <input type="radio" name="g6_4" id="g6_4_p"/>
+  <input type="radio" name="g6_4" id="g6_4_q"/>
+  <input type="radio" name="g6_4" id="g6_4_r"/>
+  <input type="radio" name="g6_4" id="g6_4_s"/>
+  <input type="radio" name="g6_4" id="g6_4_t"/>
+  <input type="radio" name="g6_4" id="g6_4_u"/>
+  <input type="radio" name="g6_4" id="g6_4_v"/>
+  <input type="radio" name="g6_4" id="g6_4_w"/>
+  <input type="radio" name="g6_4" id="g6_4_x"/>
+  <input type="radio" name="g6_4" id="g6_4_y"/>
+  <input type="radio" name="g6_4" id="g6_4_z"/>
+  <input type="radio" name="g6_4" id="g6_4"/>
+  <input type="radio" name="g6_5" id="g6_5_a"/>
+  <input type="radio" name="g6_5" id="g6_5_b"/>
+  <input type="radio" name="g6_5" id="g6_5_c"/>
+  <input type="radio" name="g6_5" id="g6_5_d"/>
+  <input type="radio" name="g6_5" id="g6_5_e"/>
+  <input type="radio" name="g6_5" id="g6_5_f"/>
+  <input type="radio" name="g6_5" id="g6_5_g"/>
+  <input type="radio" name="g6_5" id="g6_5_h"/>
+  <input type="radio" name="g6_5" id="g6_5_i"/>
+  <input type="radio" name="g6_5" id="g6_5_j"/>
+  <input type="radio" name="g6_5" id="g6_5_k"/>
+  <input type="radio" name="g6_5" id="g6_5_l"/>
+  <input type="radio" name="g6_5" id="g6_5_m"/>
+  <input type="radio" name="g6_5" id="g6_5_n"/>
+  <input type="radio" name="g6_5" id="g6_5_o"/>
+  <input type="radio" name="g6_5" id="g6_5_p"/>
+  <input type="radio" name="g6_5" id="g6_5_q"/>
+  <input type="radio" name="g6_5" id="g6_5_r"/>
+  <input type="radio" name="g6_5" id="g6_5_s"/>
+  <input type="radio" name="g6_5" id="g6_5_t"/>
+  <input type="radio" name="g6_5" id="g6_5_u"/>
+  <input type="radio" name="g6_5" id="g6_5_v"/>
+  <input type="radio" name="g6_5" id="g6_5_w"/>
+  <input type="radio" name="g6_5" id="g6_5_x"/>
+  <input type="radio" name="g6_5" id="g6_5_y"/>
+  <input type="radio" name="g6_5" id="g6_5_z"/>
+  <input type="radio" name="g6_5" id="g6_5"/>
+  <input class="g" type="radio" name="g6" id="g6-check"/>
+  <input class="g" type="radio" name="g6" id="g6-win"/>
+  <div id="letters">
+    <div id="l1_1"></div>
+    <div id="l1_2"></div>
+    <div id="l1_3"></div>
+    <div id="l1_4"></div>
+    <div id="l1_5"></div>
+    <div id="l2_1"></div>
+    <div id="l2_2"></div>
+    <div id="l2_3"></div>
+    <div id="l2_4"></div>
+    <div id="l2_5"></div>
+    <div id="l3_1"></div>
+    <div id="l3_2"></div>
+    <div id="l3_3"></div>
+    <div id="l3_4"></div>
+    <div id="l3_5"></div>
+    <div id="l4_1"></div>
+    <div id="l4_2"></div>
+    <div id="l4_3"></div>
+    <div id="l4_4"></div>
+    <div id="l4_5"></div>
+    <div id="l5_1"></div>
+    <div id="l5_2"></div>
+    <div id="l5_3"></div>
+    <div id="l5_4"></div>
+    <div id="l5_5"></div>
+    <div id="l6_1"></div>
+    <div id="l6_2"></div>
+    <div id="l6_3"></div>
+    <div id="l6_4"></div>
+    <div id="l6_5"></div>
+  </div>
+  <div id="keys">
+    <label for="g1_1_q"></label>
+    <label for="g1_2_q"></label>
+    <label for="g1_3_q"></label>
+    <label for="g1_4_q"></label>
+    <label for="g1_5_q"></label>
+    <label for="g1_1_w"></label>
+    <label for="g1_2_w"></label>
+    <label for="g1_3_w"></label>
+    <label for="g1_4_w"></label>
+    <label for="g1_5_w"></label>
+    <label for="g1_1_e"></label>
+    <label for="g1_2_e"></label>
+    <label for="g1_3_e"></label>
+    <label for="g1_4_e"></label>
+    <label for="g1_5_e"></label>
+    <label for="g1_1_r"></label>
+    <label for="g1_2_r"></label>
+    <label for="g1_3_r"></label>
+    <label for="g1_4_r"></label>
+    <label for="g1_5_r"></label>
+    <label for="g1_1_t"></label>
+    <label for="g1_2_t"></label>
+    <label for="g1_3_t"></label>
+    <label for="g1_4_t"></label>
+    <label for="g1_5_t"></label>
+    <label for="g1_1_y"></label>
+    <label for="g1_2_y"></label>
+    <label for="g1_3_y"></label>
+    <label for="g1_4_y"></label>
+    <label for="g1_5_y"></label>
+    <label for="g1_1_u"></label>
+    <label for="g1_2_u"></label>
+    <label for="g1_3_u"></label>
+    <label for="g1_4_u"></label>
+    <label for="g1_5_u"></label>
+    <label for="g1_1_i"></label>
+    <label for="g1_2_i"></label>
+    <label for="g1_3_i"></label>
+    <label for="g1_4_i"></label>
+    <label for="g1_5_i"></label>
+    <label for="g1_1_o"></label>
+    <label for="g1_2_o"></label>
+    <label for="g1_3_o"></label>
+    <label for="g1_4_o"></label>
+    <label for="g1_5_o"></label>
+    <label for="g1_1_p"></label>
+    <label for="g1_2_p"></label>
+    <label for="g1_3_p"></label>
+    <label for="g1_4_p"></label>
+    <label for="g1_5_p"></label>
+    <label for="g1_1_a"></label>
+    <label for="g1_2_a"></label>
+    <label for="g1_3_a"></label>
+    <label for="g1_4_a"></label>
+    <label for="g1_5_a"></label>
+    <label for="g1_1_s"></label>
+    <label for="g1_2_s"></label>
+    <label for="g1_3_s"></label>
+    <label for="g1_4_s"></label>
+    <label for="g1_5_s"></label>
+    <label for="g1_1_d"></label>
+    <label for="g1_2_d"></label>
+    <label for="g1_3_d"></label>
+    <label for="g1_4_d"></label>
+    <label for="g1_5_d"></label>
+    <label for="g1_1_f"></label>
+    <label for="g1_2_f"></label>
+    <label for="g1_3_f"></label>
+    <label for="g1_4_f"></label>
+    <label for="g1_5_f"></label>
+    <label for="g1_1_g"></label>
+    <label for="g1_2_g"></label>
+    <label for="g1_3_g"></label>
+    <label for="g1_4_g"></label>
+    <label for="g1_5_g"></label>
+    <label for="g1_1_h"></label>
+    <label for="g1_2_h"></label>
+    <label for="g1_3_h"></label>
+    <label for="g1_4_h"></label>
+    <label for="g1_5_h"></label>
+    <label for="g1_1_j"></label>
+    <label for="g1_2_j"></label>
+    <label for="g1_3_j"></label>
+    <label for="g1_4_j"></label>
+    <label for="g1_5_j"></label>
+    <label for="g1_1_k"></label>
+    <label for="g1_2_k"></label>
+    <label for="g1_3_k"></label>
+    <label for="g1_4_k"></label>
+    <label for="g1_5_k"></label>
+    <label for="g1_1_l"></label>
+    <label for="g1_2_l"></label>
+    <label for="g1_3_l"></label>
+    <label for="g1_4_l"></label>
+    <label for="g1_5_l"></label>
+    <div class="g1_"></div>
+    <div class="enter e1">
+      <label for="g1-check"></label>
+      <label for="g1-win"></label>
+    </div>
+    <label for="g1_1_z"></label>
+    <label for="g1_2_z"></label>
+    <label for="g1_3_z"></label>
+    <label for="g1_4_z"></label>
+    <label for="g1_5_z"></label>
+    <label for="g1_1_x"></label>
+    <label for="g1_2_x"></label>
+    <label for="g1_3_x"></label>
+    <label for="g1_4_x"></label>
+    <label for="g1_5_x"></label>
+    <label for="g1_1_c"></label>
+    <label for="g1_2_c"></label>
+    <label for="g1_3_c"></label>
+    <label for="g1_4_c"></label>
+    <label for="g1_5_c"></label>
+    <label for="g1_1_v"></label>
+    <label for="g1_2_v"></label>
+    <label for="g1_3_v"></label>
+    <label for="g1_4_v"></label>
+    <label for="g1_5_v"></label>
+    <label for="g1_1_b"></label>
+    <label for="g1_2_b"></label>
+    <label for="g1_3_b"></label>
+    <label for="g1_4_b"></label>
+    <label for="g1_5_b"></label>
+    <label for="g1_1_n"></label>
+    <label for="g1_2_n"></label>
+    <label for="g1_3_n"></label>
+    <label for="g1_4_n"></label>
+    <label for="g1_5_n"></label>
+    <label for="g1_1_m"></label>
+    <label for="g1_2_m"></label>
+    <label for="g1_3_m"></label>
+    <label for="g1_4_m"></label>
+    <label for="g1_5_m"></label>
+    <label for="g1_1"></label>
+    <label for="g1_2"></label>
+    <label for="g1_3"></label>
+    <label for="g1_4"></label>
+    <label for="g1_5"></label>
+    <label for="g2_1_q"></label>
+    <label for="g2_2_q"></label>
+    <label for="g2_3_q"></label>
+    <label for="g2_4_q"></label>
+    <label for="g2_5_q"></label>
+    <label for="g2_1_w"></label>
+    <label for="g2_2_w"></label>
+    <label for="g2_3_w"></label>
+    <label for="g2_4_w"></label>
+    <label for="g2_5_w"></label>
+    <label for="g2_1_e"></label>
+    <label for="g2_2_e"></label>
+    <label for="g2_3_e"></label>
+    <label for="g2_4_e"></label>
+    <label for="g2_5_e"></label>
+    <label for="g2_1_r"></label>
+    <label for="g2_2_r"></label>
+    <label for="g2_3_r"></label>
+    <label for="g2_4_r"></label>
+    <label for="g2_5_r"></label>
+    <label for="g2_1_t"></label>
+    <label for="g2_2_t"></label>
+    <label for="g2_3_t"></label>
+    <label for="g2_4_t"></label>
+    <label for="g2_5_t"></label>
+    <label for="g2_1_y"></label>
+    <label for="g2_2_y"></label>
+    <label for="g2_3_y"></label>
+    <label for="g2_4_y"></label>
+    <label for="g2_5_y"></label>
+    <label for="g2_1_u"></label>
+    <label for="g2_2_u"></label>
+    <label for="g2_3_u"></label>
+    <label for="g2_4_u"></label>
+    <label for="g2_5_u"></label>
+    <label for="g2_1_i"></label>
+    <label for="g2_2_i"></label>
+    <label for="g2_3_i"></label>
+    <label for="g2_4_i"></label>
+    <label for="g2_5_i"></label>
+    <label for="g2_1_o"></label>
+    <label for="g2_2_o"></label>
+    <label for="g2_3_o"></label>
+    <label for="g2_4_o"></label>
+    <label for="g2_5_o"></label>
+    <label for="g2_1_p"></label>
+    <label for="g2_2_p"></label>
+    <label for="g2_3_p"></label>
+    <label for="g2_4_p"></label>
+    <label for="g2_5_p"></label>
+    <label for="g2_1_a"></label>
+    <label for="g2_2_a"></label>
+    <label for="g2_3_a"></label>
+    <label for="g2_4_a"></label>
+    <label for="g2_5_a"></label>
+    <label for="g2_1_s"></label>
+    <label for="g2_2_s"></label>
+    <label for="g2_3_s"></label>
+    <label for="g2_4_s"></label>
+    <label for="g2_5_s"></label>
+    <label for="g2_1_d"></label>
+    <label for="g2_2_d"></label>
+    <label for="g2_3_d"></label>
+    <label for="g2_4_d"></label>
+    <label for="g2_5_d"></label>
+    <label for="g2_1_f"></label>
+    <label for="g2_2_f"></label>
+    <label for="g2_3_f"></label>
+    <label for="g2_4_f"></label>
+    <label for="g2_5_f"></label>
+    <label for="g2_1_g"></label>
+    <label for="g2_2_g"></label>
+    <label for="g2_3_g"></label>
+    <label for="g2_4_g"></label>
+    <label for="g2_5_g"></label>
+    <label for="g2_1_h"></label>
+    <label for="g2_2_h"></label>
+    <label for="g2_3_h"></label>
+    <label for="g2_4_h"></label>
+    <label for="g2_5_h"></label>
+    <label for="g2_1_j"></label>
+    <label for="g2_2_j"></label>
+    <label for="g2_3_j"></label>
+    <label for="g2_4_j"></label>
+    <label for="g2_5_j"></label>
+    <label for="g2_1_k"></label>
+    <label for="g2_2_k"></label>
+    <label for="g2_3_k"></label>
+    <label for="g2_4_k"></label>
+    <label for="g2_5_k"></label>
+    <label for="g2_1_l"></label>
+    <label for="g2_2_l"></label>
+    <label for="g2_3_l"></label>
+    <label for="g2_4_l"></label>
+    <label for="g2_5_l"></label>
+    <div class="g2_"></div>
+    <div class="enter e2">
+      <label for="g2-check"></label>
+      <label for="g2-win"></label>
+    </div>
+    <label for="g2_1_z"></label>
+    <label for="g2_2_z"></label>
+    <label for="g2_3_z"></label>
+    <label for="g2_4_z"></label>
+    <label for="g2_5_z"></label>
+    <label for="g2_1_x"></label>
+    <label for="g2_2_x"></label>
+    <label for="g2_3_x"></label>
+    <label for="g2_4_x"></label>
+    <label for="g2_5_x"></label>
+    <label for="g2_1_c"></label>
+    <label for="g2_2_c"></label>
+    <label for="g2_3_c"></label>
+    <label for="g2_4_c"></label>
+    <label for="g2_5_c"></label>
+    <label for="g2_1_v"></label>
+    <label for="g2_2_v"></label>
+    <label for="g2_3_v"></label>
+    <label for="g2_4_v"></label>
+    <label for="g2_5_v"></label>
+    <label for="g2_1_b"></label>
+    <label for="g2_2_b"></label>
+    <label for="g2_3_b"></label>
+    <label for="g2_4_b"></label>
+    <label for="g2_5_b"></label>
+    <label for="g2_1_n"></label>
+    <label for="g2_2_n"></label>
+    <label for="g2_3_n"></label>
+    <label for="g2_4_n"></label>
+    <label for="g2_5_n"></label>
+    <label for="g2_1_m"></label>
+    <label for="g2_2_m"></label>
+    <label for="g2_3_m"></label>
+    <label for="g2_4_m"></label>
+    <label for="g2_5_m"></label>
+    <label for="g2_1"></label>
+    <label for="g2_2"></label>
+    <label for="g2_3"></label>
+    <label for="g2_4"></label>
+    <label for="g2_5"></label>
+    <label for="g3_1_q"></label>
+    <label for="g3_2_q"></label>
+    <label for="g3_3_q"></label>
+    <label for="g3_4_q"></label>
+    <label for="g3_5_q"></label>
+    <label for="g3_1_w"></label>
+    <label for="g3_2_w"></label>
+    <label for="g3_3_w"></label>
+    <label for="g3_4_w"></label>
+    <label for="g3_5_w"></label>
+    <label for="g3_1_e"></label>
+    <label for="g3_2_e"></label>
+    <label for="g3_3_e"></label>
+    <label for="g3_4_e"></label>
+    <label for="g3_5_e"></label>
+    <label for="g3_1_r"></label>
+    <label for="g3_2_r"></label>
+    <label for="g3_3_r"></label>
+    <label for="g3_4_r"></label>
+    <label for="g3_5_r"></label>
+    <label for="g3_1_t"></label>
+    <label for="g3_2_t"></label>
+    <label for="g3_3_t"></label>
+    <label for="g3_4_t"></label>
+    <label for="g3_5_t"></label>
+    <label for="g3_1_y"></label>
+    <label for="g3_2_y"></label>
+    <label for="g3_3_y"></label>
+    <label for="g3_4_y"></label>
+    <label for="g3_5_y"></label>
+    <label for="g3_1_u"></label>
+    <label for="g3_2_u"></label>
+    <label for="g3_3_u"></label>
+    <label for="g3_4_u"></label>
+    <label for="g3_5_u"></label>
+    <label for="g3_1_i"></label>
+    <label for="g3_2_i"></label>
+    <label for="g3_3_i"></label>
+    <label for="g3_4_i"></label>
+    <label for="g3_5_i"></label>
+    <label for="g3_1_o"></label>
+    <label for="g3_2_o"></label>
+    <label for="g3_3_o"></label>
+    <label for="g3_4_o"></label>
+    <label for="g3_5_o"></label>
+    <label for="g3_1_p"></label>
+    <label for="g3_2_p"></label>
+    <label for="g3_3_p"></label>
+    <label for="g3_4_p"></label>
+    <label for="g3_5_p"></label>
+    <label for="g3_1_a"></label>
+    <label for="g3_2_a"></label>
+    <label for="g3_3_a"></label>
+    <label for="g3_4_a"></label>
+    <label for="g3_5_a"></label>
+    <label for="g3_1_s"></label>
+    <label for="g3_2_s"></label>
+    <label for="g3_3_s"></label>
+    <label for="g3_4_s"></label>
+    <label for="g3_5_s"></label>
+    <label for="g3_1_d"></label>
+    <label for="g3_2_d"></label>
+    <label for="g3_3_d"></label>
+    <label for="g3_4_d"></label>
+    <label for="g3_5_d"></label>
+    <label for="g3_1_f"></label>
+    <label for="g3_2_f"></label>
+    <label for="g3_3_f"></label>
+    <label for="g3_4_f"></label>
+    <label for="g3_5_f"></label>
+    <label for="g3_1_g"></label>
+    <label for="g3_2_g"></label>
+    <label for="g3_3_g"></label>
+    <label for="g3_4_g"></label>
+    <label for="g3_5_g"></label>
+    <label for="g3_1_h"></label>
+    <label for="g3_2_h"></label>
+    <label for="g3_3_h"></label>
+    <label for="g3_4_h"></label>
+    <label for="g3_5_h"></label>
+    <label for="g3_1_j"></label>
+    <label for="g3_2_j"></label>
+    <label for="g3_3_j"></label>
+    <label for="g3_4_j"></label>
+    <label for="g3_5_j"></label>
+    <label for="g3_1_k"></label>
+    <label for="g3_2_k"></label>
+    <label for="g3_3_k"></label>
+    <label for="g3_4_k"></label>
+    <label for="g3_5_k"></label>
+    <label for="g3_1_l"></label>
+    <label for="g3_2_l"></label>
+    <label for="g3_3_l"></label>
+    <label for="g3_4_l"></label>
+    <label for="g3_5_l"></label>
+    <div class="g3_"></div>
+    <div class="enter e3">
+      <label for="g3-check"></label>
+      <label for="g3-win"></label>
+    </div>
+    <label for="g3_1_z"></label>
+    <label for="g3_2_z"></label>
+    <label for="g3_3_z"></label>
+    <label for="g3_4_z"></label>
+    <label for="g3_5_z"></label>
+    <label for="g3_1_x"></label>
+    <label for="g3_2_x"></label>
+    <label for="g3_3_x"></label>
+    <label for="g3_4_x"></label>
+    <label for="g3_5_x"></label>
+    <label for="g3_1_c"></label>
+    <label for="g3_2_c"></label>
+    <label for="g3_3_c"></label>
+    <label for="g3_4_c"></label>
+    <label for="g3_5_c"></label>
+    <label for="g3_1_v"></label>
+    <label for="g3_2_v"></label>
+    <label for="g3_3_v"></label>
+    <label for="g3_4_v"></label>
+    <label for="g3_5_v"></label>
+    <label for="g3_1_b"></label>
+    <label for="g3_2_b"></label>
+    <label for="g3_3_b"></label>
+    <label for="g3_4_b"></label>
+    <label for="g3_5_b"></label>
+    <label for="g3_1_n"></label>
+    <label for="g3_2_n"></label>
+    <label for="g3_3_n"></label>
+    <label for="g3_4_n"></label>
+    <label for="g3_5_n"></label>
+    <label for="g3_1_m"></label>
+    <label for="g3_2_m"></label>
+    <label for="g3_3_m"></label>
+    <label for="g3_4_m"></label>
+    <label for="g3_5_m"></label>
+    <label for="g3_1"></label>
+    <label for="g3_2"></label>
+    <label for="g3_3"></label>
+    <label for="g3_4"></label>
+    <label for="g3_5"></label>
+    <label for="g4_1_q"></label>
+    <label for="g4_2_q"></label>
+    <label for="g4_3_q"></label>
+    <label for="g4_4_q"></label>
+    <label for="g4_5_q"></label>
+    <label for="g4_1_w"></label>
+    <label for="g4_2_w"></label>
+    <label for="g4_3_w"></label>
+    <label for="g4_4_w"></label>
+    <label for="g4_5_w"></label>
+    <label for="g4_1_e"></label>
+    <label for="g4_2_e"></label>
+    <label for="g4_3_e"></label>
+    <label for="g4_4_e"></label>
+    <label for="g4_5_e"></label>
+    <label for="g4_1_r"></label>
+    <label for="g4_2_r"></label>
+    <label for="g4_3_r"></label>
+    <label for="g4_4_r"></label>
+    <label for="g4_5_r"></label>
+    <label for="g4_1_t"></label>
+    <label for="g4_2_t"></label>
+    <label for="g4_3_t"></label>
+    <label for="g4_4_t"></label>
+    <label for="g4_5_t"></label>
+    <label for="g4_1_y"></label>
+    <label for="g4_2_y"></label>
+    <label for="g4_3_y"></label>
+    <label for="g4_4_y"></label>
+    <label for="g4_5_y"></label>
+    <label for="g4_1_u"></label>
+    <label for="g4_2_u"></label>
+    <label for="g4_3_u"></label>
+    <label for="g4_4_u"></label>
+    <label for="g4_5_u"></label>
+    <label for="g4_1_i"></label>
+    <label for="g4_2_i"></label>
+    <label for="g4_3_i"></label>
+    <label for="g4_4_i"></label>
+    <label for="g4_5_i"></label>
+    <label for="g4_1_o"></label>
+    <label for="g4_2_o"></label>
+    <label for="g4_3_o"></label>
+    <label for="g4_4_o"></label>
+    <label for="g4_5_o"></label>
+    <label for="g4_1_p"></label>
+    <label for="g4_2_p"></label>
+    <label for="g4_3_p"></label>
+    <label for="g4_4_p"></label>
+    <label for="g4_5_p"></label>
+    <label for="g4_1_a"></label>
+    <label for="g4_2_a"></label>
+    <label for="g4_3_a"></label>
+    <label for="g4_4_a"></label>
+    <label for="g4_5_a"></label>
+    <label for="g4_1_s"></label>
+    <label for="g4_2_s"></label>
+    <label for="g4_3_s"></label>
+    <label for="g4_4_s"></label>
+    <label for="g4_5_s"></label>
+    <label for="g4_1_d"></label>
+    <label for="g4_2_d"></label>
+    <label for="g4_3_d"></label>
+    <label for="g4_4_d"></label>
+    <label for="g4_5_d"></label>
+    <label for="g4_1_f"></label>
+    <label for="g4_2_f"></label>
+    <label for="g4_3_f"></label>
+    <label for="g4_4_f"></label>
+    <label for="g4_5_f"></label>
+    <label for="g4_1_g"></label>
+    <label for="g4_2_g"></label>
+    <label for="g4_3_g"></label>
+    <label for="g4_4_g"></label>
+    <label for="g4_5_g"></label>
+    <label for="g4_1_h"></label>
+    <label for="g4_2_h"></label>
+    <label for="g4_3_h"></label>
+    <label for="g4_4_h"></label>
+    <label for="g4_5_h"></label>
+    <label for="g4_1_j"></label>
+    <label for="g4_2_j"></label>
+    <label for="g4_3_j"></label>
+    <label for="g4_4_j"></label>
+    <label for="g4_5_j"></label>
+    <label for="g4_1_k"></label>
+    <label for="g4_2_k"></label>
+    <label for="g4_3_k"></label>
+    <label for="g4_4_k"></label>
+    <label for="g4_5_k"></label>
+    <label for="g4_1_l"></label>
+    <label for="g4_2_l"></label>
+    <label for="g4_3_l"></label>
+    <label for="g4_4_l"></label>
+    <label for="g4_5_l"></label>
+    <div class="g4_"></div>
+    <div class="enter e4">
+      <label for="g4-check"></label>
+      <label for="g4-win"></label>
+    </div>
+    <label for="g4_1_z"></label>
+    <label for="g4_2_z"></label>
+    <label for="g4_3_z"></label>
+    <label for="g4_4_z"></label>
+    <label for="g4_5_z"></label>
+    <label for="g4_1_x"></label>
+    <label for="g4_2_x"></label>
+    <label for="g4_3_x"></label>
+    <label for="g4_4_x"></label>
+    <label for="g4_5_x"></label>
+    <label for="g4_1_c"></label>
+    <label for="g4_2_c"></label>
+    <label for="g4_3_c"></label>
+    <label for="g4_4_c"></label>
+    <label for="g4_5_c"></label>
+    <label for="g4_1_v"></label>
+    <label for="g4_2_v"></label>
+    <label for="g4_3_v"></label>
+    <label for="g4_4_v"></label>
+    <label for="g4_5_v"></label>
+    <label for="g4_1_b"></label>
+    <label for="g4_2_b"></label>
+    <label for="g4_3_b"></label>
+    <label for="g4_4_b"></label>
+    <label for="g4_5_b"></label>
+    <label for="g4_1_n"></label>
+    <label for="g4_2_n"></label>
+    <label for="g4_3_n"></label>
+    <label for="g4_4_n"></label>
+    <label for="g4_5_n"></label>
+    <label for="g4_1_m"></label>
+    <label for="g4_2_m"></label>
+    <label for="g4_3_m"></label>
+    <label for="g4_4_m"></label>
+    <label for="g4_5_m"></label>
+    <label for="g4_1"></label>
+    <label for="g4_2"></label>
+    <label for="g4_3"></label>
+    <label for="g4_4"></label>
+    <label for="g4_5"></label>
+    <label for="g5_1_q"></label>
+    <label for="g5_2_q"></label>
+    <label for="g5_3_q"></label>
+    <label for="g5_4_q"></label>
+    <label for="g5_5_q"></label>
+    <label for="g5_1_w"></label>
+    <label for="g5_2_w"></label>
+    <label for="g5_3_w"></label>
+    <label for="g5_4_w"></label>
+    <label for="g5_5_w"></label>
+    <label for="g5_1_e"></label>
+    <label for="g5_2_e"></label>
+    <label for="g5_3_e"></label>
+    <label for="g5_4_e"></label>
+    <label for="g5_5_e"></label>
+    <label for="g5_1_r"></label>
+    <label for="g5_2_r"></label>
+    <label for="g5_3_r"></label>
+    <label for="g5_4_r"></label>
+    <label for="g5_5_r"></label>
+    <label for="g5_1_t"></label>
+    <label for="g5_2_t"></label>
+    <label for="g5_3_t"></label>
+    <label for="g5_4_t"></label>
+    <label for="g5_5_t"></label>
+    <label for="g5_1_y"></label>
+    <label for="g5_2_y"></label>
+    <label for="g5_3_y"></label>
+    <label for="g5_4_y"></label>
+    <label for="g5_5_y"></label>
+    <label for="g5_1_u"></label>
+    <label for="g5_2_u"></label>
+    <label for="g5_3_u"></label>
+    <label for="g5_4_u"></label>
+    <label for="g5_5_u"></label>
+    <label for="g5_1_i"></label>
+    <label for="g5_2_i"></label>
+    <label for="g5_3_i"></label>
+    <label for="g5_4_i"></label>
+    <label for="g5_5_i"></label>
+    <label for="g5_1_o"></label>
+    <label for="g5_2_o"></label>
+    <label for="g5_3_o"></label>
+    <label for="g5_4_o"></label>
+    <label for="g5_5_o"></label>
+    <label for="g5_1_p"></label>
+    <label for="g5_2_p"></label>
+    <label for="g5_3_p"></label>
+    <label for="g5_4_p"></label>
+    <label for="g5_5_p"></label>
+    <label for="g5_1_a"></label>
+    <label for="g5_2_a"></label>
+    <label for="g5_3_a"></label>
+    <label for="g5_4_a"></label>
+    <label for="g5_5_a"></label>
+    <label for="g5_1_s"></label>
+    <label for="g5_2_s"></label>
+    <label for="g5_3_s"></label>
+    <label for="g5_4_s"></label>
+    <label for="g5_5_s"></label>
+    <label for="g5_1_d"></label>
+    <label for="g5_2_d"></label>
+    <label for="g5_3_d"></label>
+    <label for="g5_4_d"></label>
+    <label for="g5_5_d"></label>
+    <label for="g5_1_f"></label>
+    <label for="g5_2_f"></label>
+    <label for="g5_3_f"></label>
+    <label for="g5_4_f"></label>
+    <label for="g5_5_f"></label>
+    <label for="g5_1_g"></label>
+    <label for="g5_2_g"></label>
+    <label for="g5_3_g"></label>
+    <label for="g5_4_g"></label>
+    <label for="g5_5_g"></label>
+    <label for="g5_1_h"></label>
+    <label for="g5_2_h"></label>
+    <label for="g5_3_h"></label>
+    <label for="g5_4_h"></label>
+    <label for="g5_5_h"></label>
+    <label for="g5_1_j"></label>
+    <label for="g5_2_j"></label>
+    <label for="g5_3_j"></label>
+    <label for="g5_4_j"></label>
+    <label for="g5_5_j"></label>
+    <label for="g5_1_k"></label>
+    <label for="g5_2_k"></label>
+    <label for="g5_3_k"></label>
+    <label for="g5_4_k"></label>
+    <label for="g5_5_k"></label>
+    <label for="g5_1_l"></label>
+    <label for="g5_2_l"></label>
+    <label for="g5_3_l"></label>
+    <label for="g5_4_l"></label>
+    <label for="g5_5_l"></label>
+    <div class="g5_"></div>
+    <div class="enter e5">
+      <label for="g5-check"></label>
+      <label for="g5-win"></label>
+    </div>
+    <label for="g5_1_z"></label>
+    <label for="g5_2_z"></label>
+    <label for="g5_3_z"></label>
+    <label for="g5_4_z"></label>
+    <label for="g5_5_z"></label>
+    <label for="g5_1_x"></label>
+    <label for="g5_2_x"></label>
+    <label for="g5_3_x"></label>
+    <label for="g5_4_x"></label>
+    <label for="g5_5_x"></label>
+    <label for="g5_1_c"></label>
+    <label for="g5_2_c"></label>
+    <label for="g5_3_c"></label>
+    <label for="g5_4_c"></label>
+    <label for="g5_5_c"></label>
+    <label for="g5_1_v"></label>
+    <label for="g5_2_v"></label>
+    <label for="g5_3_v"></label>
+    <label for="g5_4_v"></label>
+    <label for="g5_5_v"></label>
+    <label for="g5_1_b"></label>
+    <label for="g5_2_b"></label>
+    <label for="g5_3_b"></label>
+    <label for="g5_4_b"></label>
+    <label for="g5_5_b"></label>
+    <label for="g5_1_n"></label>
+    <label for="g5_2_n"></label>
+    <label for="g5_3_n"></label>
+    <label for="g5_4_n"></label>
+    <label for="g5_5_n"></label>
+    <label for="g5_1_m"></label>
+    <label for="g5_2_m"></label>
+    <label for="g5_3_m"></label>
+    <label for="g5_4_m"></label>
+    <label for="g5_5_m"></label>
+    <label for="g5_1"></label>
+    <label for="g5_2"></label>
+    <label for="g5_3"></label>
+    <label for="g5_4"></label>
+    <label for="g5_5"></label>
+    <label for="g6_1_q"></label>
+    <label for="g6_2_q"></label>
+    <label for="g6_3_q"></label>
+    <label for="g6_4_q"></label>
+    <label for="g6_5_q"></label>
+    <label for="g6_1_w"></label>
+    <label for="g6_2_w"></label>
+    <label for="g6_3_w"></label>
+    <label for="g6_4_w"></label>
+    <label for="g6_5_w"></label>
+    <label for="g6_1_e"></label>
+    <label for="g6_2_e"></label>
+    <label for="g6_3_e"></label>
+    <label for="g6_4_e"></label>
+    <label for="g6_5_e"></label>
+    <label for="g6_1_r"></label>
+    <label for="g6_2_r"></label>
+    <label for="g6_3_r"></label>
+    <label for="g6_4_r"></label>
+    <label for="g6_5_r"></label>
+    <label for="g6_1_t"></label>
+    <label for="g6_2_t"></label>
+    <label for="g6_3_t"></label>
+    <label for="g6_4_t"></label>
+    <label for="g6_5_t"></label>
+    <label for="g6_1_y"></label>
+    <label for="g6_2_y"></label>
+    <label for="g6_3_y"></label>
+    <label for="g6_4_y"></label>
+    <label for="g6_5_y"></label>
+    <label for="g6_1_u"></label>
+    <label for="g6_2_u"></label>
+    <label for="g6_3_u"></label>
+    <label for="g6_4_u"></label>
+    <label for="g6_5_u"></label>
+    <label for="g6_1_i"></label>
+    <label for="g6_2_i"></label>
+    <label for="g6_3_i"></label>
+    <label for="g6_4_i"></label>
+    <label for="g6_5_i"></label>
+    <label for="g6_1_o"></label>
+    <label for="g6_2_o"></label>
+    <label for="g6_3_o"></label>
+    <label for="g6_4_o"></label>
+    <label for="g6_5_o"></label>
+    <label for="g6_1_p"></label>
+    <label for="g6_2_p"></label>
+    <label for="g6_3_p"></label>
+    <label for="g6_4_p"></label>
+    <label for="g6_5_p"></label>
+    <label for="g6_1_a"></label>
+    <label for="g6_2_a"></label>
+    <label for="g6_3_a"></label>
+    <label for="g6_4_a"></label>
+    <label for="g6_5_a"></label>
+    <label for="g6_1_s"></label>
+    <label for="g6_2_s"></label>
+    <label for="g6_3_s"></label>
+    <label for="g6_4_s"></label>
+    <label for="g6_5_s"></label>
+    <label for="g6_1_d"></label>
+    <label for="g6_2_d"></label>
+    <label for="g6_3_d"></label>
+    <label for="g6_4_d"></label>
+    <label for="g6_5_d"></label>
+    <label for="g6_1_f"></label>
+    <label for="g6_2_f"></label>
+    <label for="g6_3_f"></label>
+    <label for="g6_4_f"></label>
+    <label for="g6_5_f"></label>
+    <label for="g6_1_g"></label>
+    <label for="g6_2_g"></label>
+    <label for="g6_3_g"></label>
+    <label for="g6_4_g"></label>
+    <label for="g6_5_g"></label>
+    <label for="g6_1_h"></label>
+    <label for="g6_2_h"></label>
+    <label for="g6_3_h"></label>
+    <label for="g6_4_h"></label>
+    <label for="g6_5_h"></label>
+    <label for="g6_1_j"></label>
+    <label for="g6_2_j"></label>
+    <label for="g6_3_j"></label>
+    <label for="g6_4_j"></label>
+    <label for="g6_5_j"></label>
+    <label for="g6_1_k"></label>
+    <label for="g6_2_k"></label>
+    <label for="g6_3_k"></label>
+    <label for="g6_4_k"></label>
+    <label for="g6_5_k"></label>
+    <label for="g6_1_l"></label>
+    <label for="g6_2_l"></label>
+    <label for="g6_3_l"></label>
+    <label for="g6_4_l"></label>
+    <label for="g6_5_l"></label>
+    <div class="g6_"></div>
+    <div class="enter e6">
+      <label for="g6-check"></label>
+      <label for="g6-win"></label>
+    </div>
+    <label for="g6_1_z"></label>
+    <label for="g6_2_z"></label>
+    <label for="g6_3_z"></label>
+    <label for="g6_4_z"></label>
+    <label for="g6_5_z"></label>
+    <label for="g6_1_x"></label>
+    <label for="g6_2_x"></label>
+    <label for="g6_3_x"></label>
+    <label for="g6_4_x"></label>
+    <label for="g6_5_x"></label>
+    <label for="g6_1_c"></label>
+    <label for="g6_2_c"></label>
+    <label for="g6_3_c"></label>
+    <label for="g6_4_c"></label>
+    <label for="g6_5_c"></label>
+    <label for="g6_1_v"></label>
+    <label for="g6_2_v"></label>
+    <label for="g6_3_v"></label>
+    <label for="g6_4_v"></label>
+    <label for="g6_5_v"></label>
+    <label for="g6_1_b"></label>
+    <label for="g6_2_b"></label>
+    <label for="g6_3_b"></label>
+    <label for="g6_4_b"></label>
+    <label for="g6_5_b"></label>
+    <label for="g6_1_n"></label>
+    <label for="g6_2_n"></label>
+    <label for="g6_3_n"></label>
+    <label for="g6_4_n"></label>
+    <label for="g6_5_n"></label>
+    <label for="g6_1_m"></label>
+    <label for="g6_2_m"></label>
+    <label for="g6_3_m"></label>
+    <label for="g6_4_m"></label>
+    <label for="g6_5_m"></label>
+    <label for="g6_1"></label>
+    <label for="g6_2"></label>
+    <label for="g6_3"></label>
+    <label for="g6_4"></label>
+    <label for="g6_5"></label>
+  </div>
+  <div id="info">
+    <p id="i0">Guess the WORDL in 6 tries</p>
+    <p id="i1">Use the keys below to enter a guess</p>
+    <p id="i2"><span>Letters in the correct place are shown like this</span></p>
+    <p id="i3"><span>Letters in the wrong place are shown like this</span></p>
+    <p id="i4"><span>Letters not present are shown like this</span></p>
+    <p id="i5">Good luck</p>
+    <div id="words">
+      <div id="shuffle">
+        <label for="w1_a"></label>
+        <label for="w2_f"></label>
+        <label for="w3_t"></label>
+        <label for="w4_e"></label>
+        <label for="w5_r"></label>
+        <label for="w1_a"></label>
+        <label for="w2_l"></label>
+        <label for="w3_i"></label>
+        <label for="w4_g"></label>
+        <label for="w5_n"></label>
+        <label for="w1_a"></label>
+        <label for="w2_s"></label>
+        <label for="w3_i"></label>
+        <label for="w4_d"></label>
+        <label for="w5_e"></label>
+        <label for="w1_b"></label>
+        <label for="w2_l"></label>
+        <label for="w3_o"></label>
+        <label for="w4_c"></label>
+        <label for="w5_k"></label>
+        <label for="w1_b"></label>
+        <label for="w2_r"></label>
+        <label for="w3_e"></label>
+        <label for="w4_a"></label>
+        <label for="w5_k"></label>
+        <label for="w1_c"></label>
+        <label for="w2_l"></label>
+        <label for="w3_e"></label>
+        <label for="w4_a"></label>
+        <label for="w5_r"></label>
+        <label for="w1_d"></label>
+        <label for="w2_e"></label>
+        <label for="w3_l"></label>
+        <label for="w4_a"></label>
+        <label for="w5_y"></label>
+        <label for="w1_e"></label>
+        <label for="w2_m"></label>
+        <label for="w3_p"></label>
+        <label for="w4_t"></label>
+        <label for="w5_y"></label>
+        <label for="w1_f"></label>
+        <label for="w2_l"></label>
+        <label for="w3_o"></label>
+        <label for="w4_a"></label>
+        <label for="w5_t"></label>
+        <label for="w1_i"></label>
+        <label for="w2_m"></label>
+        <label for="w3_a"></label>
+        <label for="w4_g"></label>
+        <label for="w5_e"></label>
+        <label for="w1_i"></label>
+        <label for="w2_n"></label>
+        <label for="w3_p"></label>
+        <label for="w4_u"></label>
+        <label for="w5_t"></label>
+        <label for="w1_i"></label>
+        <label for="w2_t"></label>
+        <label for="w3_e"></label>
+        <label for="w4_m"></label>
+        <label for="w5_s"></label>
+        <label for="w1_p"></label>
+        <label for="w2_a"></label>
+        <label for="w3_i"></label>
+        <label for="w4_n"></label>
+        <label for="w5_t"></label>
+        <label for="w1_r"></label>
+        <label for="w2_a"></label>
+        <label for="w3_d"></label>
+        <label for="w4_i"></label>
+        <label for="w5_o"></label>
+        <label for="w1_r"></label>
+        <label for="w2_a"></label>
+        <label for="w3_n"></label>
+        <label for="w4_g"></label>
+        <label for="w5_e"></label>
+        <label for="w1_r"></label>
+        <label for="w2_a"></label>
+        <label for="w3_t"></label>
+        <label for="w4_i"></label>
+        <label for="w5_o"></label>
+        <label for="w1_s"></label>
+        <label for="w2_t"></label>
+        <label for="w3_y"></label>
+        <label for="w4_l"></label>
+        <label for="w5_e"></label>
+        <label for="w1_t"></label>
+        <label for="w2_a"></label>
+        <label for="w3_b"></label>
+        <label for="w4_l"></label>
+        <label for="w5_e"></label>
+        <label for="w1_v"></label>
+        <label for="w2_a"></label>
+        <label for="w3_l"></label>
+        <label for="w4_u"></label>
+        <label for="w5_e"></label>
+        <label for="w1_w"></label>
+        <label for="w2_i"></label>
+        <label for="w3_d"></label>
+        <label for="w4_t"></label>
+        <label for="w5_h"></label>
+      </div>
+    </div>
+    <label for="rnd"></label>
+  </div>
+  <p id="answer"><span id="a1"></span><span id="a2"></span><span id="a3"></span><span id="a4"></span><span id="a5"></span>
+  </p>
+  <p id="message"></p>
+</form>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
