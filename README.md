@@ -1,1 +1,1 @@
-# Wordle
+#A simple game of  wordle
